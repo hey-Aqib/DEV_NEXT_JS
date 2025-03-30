@@ -1,0 +1,103 @@
+import React from "react";
+import { CircleAlert } from 'lucide-react';
+const Section9_Form = () => {
+  return (
+    <>
+      <div className="relative w-full min-h-[1290px] h-auto sm:h-[80vh] md:h-[100vh] overflow-hidden bg-[rgb(28,28,28)]">
+        <h1 className="text-center p-8 pb-0 mt-16 text-4xl sm:text-5xl 2xl:text-9xl md:text-6xl lg:text-7xl font-bold ">
+          Lets's Talk
+        </h1>
+        <div className="flex gap-[1%] justify-between">
+          <div className="w-[55%] h-100 m-[4%]">
+            <div className="flex gap-[8%]">
+              <button className="p-5 py-3 text-lg md:text-sm font-semibold bg-[#E73C5F] text-gray-800 border-none ouline-none rounded-md max-sm:hidden cursor-pointer">
+                Book a Demo
+              </button>
+              <button className="p-5 py-3 text-lg font-semibold md:text-sm text-white bg-[#212121] border-white-50 outline-1 rounded-md max-sm:hidden cursor-pointer">
+                Careers
+              </button>
+            </div>
+            <div className="w-55 mt-[15%]">
+              <p>We're here to help! Complete the
+              form and our team will reach out you soon.</p>
+            </div>
+            <div className="w-55 mt-[15%]">
+              <p>Email: info@chatpandas.com</p>
+            </div>
+          </div>
+
+          <div className="w-full h-100 m-[4%]">
+            <form className="flex flex-col gap-[15px]">
+              <label htmlFor="" className="text-xl sm:text-1xl 2xl:text-4xl md:text-1xl lg:text-2xl font-medium">
+               FULL NAME
+              </label>
+              <input
+                type="text"
+                placeholder="Enter Your Full Name"
+                className="p-5 w-full text-lg font-semibold border-1 border-gray-100 rounded-md"
+              />
+
+              <label htmlFor="" className="text-xl sm:text-1xl 2xl:text-4xl md:text-1xl lg:text-2xl font-medium">
+              COMPANY NAME
+              </label>
+              <input
+                type="text"
+                placeholder="Your Your Company Name"
+                className="p-5 w-full text-lg font-semibold border-1 border-gray-300 rounded-md"
+              />
+              <label htmlFor="" className="text-xl sm:text-1xl 2xl:text-4xl md:text-1xl lg:text-2xl font-medium">
+                BUSINESS EMAIL
+              </label>
+              <input
+                type="email"
+                placeholder="Your Business Email"
+                className="p-5 w-full text-lg font-semibold border-1 border-gray-300 rounded-md"
+              />
+              <label htmlFor="" className="text-xl sm:text-1xl 2xl:text-4xl md:text-1xl lg:text-2xl font-medium">
+                PHONE NUMBER
+              </label>
+              <input
+                type="tel"
+                placeholder="Enter Your Phone Number"
+                className="p-5 w-full text-lg font-semibold border-1 border-gray-300 rounded-md"
+              />
+              <label htmlFor="" className="text-xl sm:text-1xl 2xl:text-4xl md:text-1xl lg:text-2xl font-medium">
+                JOB TITLE
+              </label>
+              <input
+                type="text"
+                placeholder="Enter Your Job Title"
+                className="p-5 w-full text-lg font-semibold border-1 border-gray-300 rounded-md"
+              />
+              <label htmlFor="" className="text-xl sm:text-1xl 2xl:text-4xl md:text-1xl lg:text-2xl font-medium">
+                HOW DID YOU HEAR ABOUT US?
+              </label>
+              <select
+                className="p-5 w-full text-lg font-semibold text-[rgb(114,114,114)] border-1 border-gray-300 rounded-md bg-[rgb(34,34,34)]"
+                placeholder="Google"
+              >
+                <option value="Google">Google</option>
+                <option value="Facebook">Facebook</option>
+                <option value="Instagram">Instagram</option>
+                <option value="LinkedIn">LinkedIn</option>
+                <option value="Email">Email</option>
+                <option value="Word of Mouth">Word of Mouth</option>
+              </select>
+            </form>
+            <div className="flex gap-[2%] mt-[3%]">
+             <CircleAlert size={50}/>
+              <p className="m-0 p-0 mt-2">
+                Your privacy is important to us. All information submitted through this form will be kept confidential and secure. We will not share your details with third parties without your consent.
+              </p>
+            </div>
+            <button className="p-5 py-3 text-lg font-semibold md:text-sm text-white bg-[#212121] border-white-50 outline-1 rounded-md max-sm:hidden mt-[2%] cursor-pointer">
+                Get in Touch
+              </button>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default Section9_Form;

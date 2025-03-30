@@ -1,4 +1,5 @@
 "use client";
+import clsx from 'clsx';
 
 import { useState, useEffect, useRef } from "react";
 import { gsap } from "gsap";
@@ -77,7 +78,7 @@ const Section4 = () => {
         onMouseEnter={() => setIsPaused(true)}
         onMouseLeave={() => setIsPaused(false)}
       >
-        <h1 className="text-center p-8 pb-0 mt-16 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold">
+        <h1 className="text-center p-8 pb-0 mt-16 text-4xl sm:text-5xl 2xl:text-9xl md:text-6xl lg:text-7xl font-bold">
           Success Stories
         </h1>
 
@@ -110,7 +111,7 @@ const Section4 = () => {
                   )}
                 </div>
               </div>
-              <p className="m-0 p-0 text-justify text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl leading-relaxed sm:leading-normal md:leading-loose">
+              <p className="m-0 p-0 text-justify text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-4xl leading-relaxed sm:leading-normal md:leading-loose">
                 {slide.para}
               </p>
             </div>
@@ -137,13 +138,13 @@ const Section4 = () => {
                   </span>
                 </div>
               </div>
-              <div className="h-80 w-[50%]">
+              <div className="h-80 2xl:h-90 w-[50%] ">
                 <Image
+                className={clsx("w-30", "2xl:w-50 rounded-lg mt-2 shadow-lg object-cover")}
                   src={slide.image}
                   alt={slide.title}
                   width={80}
                   height={80}
-                  className="rounded-lg mt-5 shadow-lg object-cover"
                 />
               </div>
             </div>
@@ -151,13 +152,13 @@ const Section4 = () => {
         ))}
       </div>
       <button
-        className="absolute right-[10%] sm:right-[12%] md:right-[16%] bottom-10 sm:bottom-12 md:bottom-16 p-2 text-base sm:text-lg scale-125 sm:scale-150 font-bold text-white bg-opacity-50 cursor-pointer"
+        className="absolute right-[10%] sm:right-[12%] 2xl:bottom-60 md:right-[16%] bottom-10 sm:bottom-12 md:bottom-16 p-2 text-base sm:text-lg scale-125 sm:scale-150 font-bold text-white bg-opacity-50 cursor-pointer"
         onClick={handlePrevClick}
       >
         <img src="/images/arrow1.svg" alt="" />
       </button>
       <button
-        className="absolute bottom-10 sm:bottom-12 md:bottom-16 right-[20%] sm:right-[20%] md:right-[20%] scale-125 sm:scale-150 p-2 text-base sm:text-lg font-bold text-white bg-opacity-50 cursor-pointer"
+        className="absolute bottom-10 sm:bottom-12 md:bottom-16 2xl:bottom-60 right-[20%] sm:right-[20%] md:right-[20%] scale-125 sm:scale-150 p-2 text-base sm:text-lg font-bold text-white bg-opacity-50 cursor-pointer"
         onClick={handleNextClick}
       >
         <img src="/images/arrow2.svg" alt="" />

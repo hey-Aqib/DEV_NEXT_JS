@@ -56,7 +56,7 @@ export default function PandaScroll() {
       <div className="bg-[rgb(28,28,28)]">
         <div
           ref={containerRef}
-          className="relative w-full h-[150vh] overflow-hidden  "
+          className="relative w-full h-[60vh] sm:h-[120vh] md:h-[150vh] overflow-hidden  "
         >
           <svg
             ref={svgRef}
@@ -79,15 +79,14 @@ export default function PandaScroll() {
             ref={pandaRef}
             src="/images/panda.avif"
             alt="Panda"
-            className="absolute w-40 h-40"
-            style={{ zIndex: 2, opacity: 0 }}
+            className="absolute w-[14%] h-[12%] sm:w-[12%] sm:h-[18%] md:w-[12%] md:h-[18%] lg:w-[12%] lg:h-[18%] xl:w-[12%] xl:h-[18%]"
+            style={{ zIndex: 10, opacity: 0 }}
           />
-           <p className="absolute text-center text-white bottom-[17%] xl:bottom-[12%] md:bottom-[17%] lg:bottom-[13%] 2xl:bottom-[10%] right-[30%] text-xl sm:text-1xl 2xl:text-4xl md:text-1xl lg:text-2xl font-medium w-[43%] xl:w-[43%] lg:w-[48%] 2xl:[50%]">
-          We Had to put the panda somewhere, so what if it's not in our logo, we
-          still love them.
-        </p>
+          <p className="absolute text-center text-white bottom-[5%] xl:bottom-[12%] md:bottom-[17%] lg:bottom-[13%] 2xl:bottom-[10%] right-[30%] text-xl sm:text-1xl 2xl:text-4xl md:text-1xl lg:text-2xl font-medium w-[43%] xl:w-[43%] lg:w-[48%] 2xl:[50%]">
+            We Had to put the panda somewhere, so what if it's not in our logo,
+            we still love them.
+          </p>
         </div>
-       
       </div>
     </>
   );

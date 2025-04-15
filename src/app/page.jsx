@@ -28,7 +28,7 @@ export default async function Home() {
     <Hero/>
     <Section2/>
     <Section3/>
-    <ScrollMerge3D/>
+    {/* <ScrollMerge3D/> */}
     <Section5/>
     <Section6/>
     <Section7/>

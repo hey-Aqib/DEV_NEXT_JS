@@ -1,9 +1,28 @@
 "use client";
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 const Footer = () => {
+  const cursorRef = useRef(null);
+
+  useEffect(() => {
+    const moveCursor = (e) => {
+      gsap.to(cursorRef.current, {
+        x: e.clientX,
+        y: e.clientY,
+        duration: 0.3,
+        ease: "power2.out",
+      });
+    };
+
+    window.addEventListener("mousemove", moveCursor);
+
+    return () => {
+      window.removeEventListener("mousemove", moveCursor);
+    };
+  }, []);
+
   useGSAP(() => {
     gsap.registerPlugin(ScrollTrigger);
     const footertl = gsap.timeline({
@@ -48,7 +67,7 @@ const Footer = () => {
   return (
     <div
       id="footer"
-      className="footer relative w-full h-full bg-black pt-20 max-sm:pt-10 overflow-hidden pb-20"
+      className="footer relative w-full h-full bg-black pt-20 max-sm:pt-10 overflow-hidden"
     >
       <div className="w-full flex items-center pl-30">
         <div className="w-full py-5">
@@ -79,14 +98,27 @@ const Footer = () => {
           <p>Linkedin</p>
         </div>
       </div>
-      <div className="w-full">
+      <footer className=" w-full flex max-sm:flex-col  justify-between items-center px-10  pt-4 pb-15 max-sm:visible">
+        <div className="text-white">
+          <p>© 2025 Chat Pandas</p>
+        </div>
+        <div className="flex gap-1">
+          <p className="text-white/50">Powered by:</p>
+          <p className="text-white">bizzinteractive designade</p>
+        </div>
+        <div className="flex max-sm:flex-col gap-1  max-sm:text-center text-white">
+          <p className="w-full">We also develop software:</p>
+          <p className="font-semibold">www.devpandas.co</p>
+        </div>
+      </footer>
+      <div className="w-full max-sm:h-[100px] ">
         <video
           src="/dev/videos/footer.mp4"
           autoPlay
           loop
           muted
           playsInline
-          className="w-full h-full bg-black  object-cover"
+          className="w-full h-full object-cover"
         />
         {/* <video
         src="/videos/footer.mp4"
@@ -97,19 +129,6 @@ const Footer = () => {
         playsInline
       /> */}
       </div>
-      <footer className=" w-full flex  max-sm:flex-col max-sm:hidden  justify-between items-center px-10  py-4">
-        <div className="text-white">
-          <p>© 2025 Chat Pandas</p>
-        </div>
-        <div className="flex gap-1">
-          <p className="text-white/50">Powered by:</p>
-          <p className="text-white">bizzinteractive designade</p>
-        </div>
-        <div className="flex gap-1 max-sm:flex-col  max-sm:text-center text-white">
-          <p>We also develop software:</p>
-          <p className="font-semibold">www.devpandas.co</p>
-        </div>
-      </footer>
 
       <img
         id="LeftHand"
@@ -121,8 +140,21 @@ const Footer = () => {
         id="RightHand"
         src="/dev/images/Handright.avif"
         alt=""
-        className="absolute max-sm:top-[52%] top-[35%] left-[55%] w-[55%]"
+        className="absolute max-sm:top-[51%] top-[35%] left-[55%] w-[55%] max-sm:w-[50%]"
       />
+      <div
+        ref={cursorRef}
+        className="absolute top-8 -left-15 w-6 h-6 pointer-events-none z-50 cursor-pointer"
+      >
+        <div className="relative w-32 h-28">
+          <div className="absolute inset-1 clip-hex bg-gradient-to-br from-blue-500 to-purple-600 z-10" style={{
+          clipPath: "polygon(20px 0%, calc(100% - 20px) 0%, 100% 20px, 100% calc(100% - 20px), calc(100% - 20px) 100%, 20px 100%, 0% calc(100% - 20px), 0% 20px)",
+        }}></div>
+          <div className="relative z-20 flex items-center justify-center w-full h-full text-white font-bold p-10" >
+            CONNECT NOW
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

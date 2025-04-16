@@ -8,7 +8,7 @@ import gsap from 'gsap'
 const Hero = () => {
 
   useEffect(() => {
-    const elements = gsap.utils.toArray("h1, h2, p, .images");
+    const elements = gsap.utils.toArray("h1, h2, p, .images #footer");
 
     elements.forEach((el) => {
       gsap.fromTo(
@@ -20,7 +20,7 @@ const Hero = () => {
           duration: 1,
           scrollTrigger: {
             trigger: el,
-            start: "top 80%",
+            start: "top 85%",
             toggleActions: "play none none reverse",
           },
         }

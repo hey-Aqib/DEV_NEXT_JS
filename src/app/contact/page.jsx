@@ -1,5 +1,5 @@
 "use client"
-import Marquee from "@/dev/Components/marquee";
+import Marquee from "@/Dev/Components/marquee";
 
 import React, { useEffect, useState } from "react";
 import { CircleAlert } from "lucide-react";

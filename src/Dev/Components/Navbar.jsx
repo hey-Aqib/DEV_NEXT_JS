@@ -121,7 +121,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className="bg-black w-full flex justify-between items-center px-5 py-4 sm:px-12 sm:py-8 md:px-12 md:py-8 lg:px-12 lg:py-8 xl:px-12 xl:py-8 2xl:px-12 2xl:py-8 text-white z-100">
+      <div className="relative -mb-15 bg-black w-full flex justify-between items-center px-5 py-4 sm:px-12 sm:py-8 md:px-12 md:py-8 lg:px-12 lg:py-8 xl:px-12 xl:py-8 2xl:px-12 2xl:py-8 text-white z-100">
       <div className="flex items-center">
   <Link href={`/`} className=" w-70 max-sm:w-50 h-5">
     <img

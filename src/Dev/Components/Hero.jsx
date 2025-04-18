@@ -27,10 +27,30 @@ const Hero = () => {
       );
     });
   });
+
+  useEffect(() => {
+      gsap.set(".circle", {
+        transformOrigin: "50% 50%",
+        scale: 0.5,
+        filter: "drop-shadow(0 0 0px white)",
+      });
+    
+      gsap.to(".circle", {
+        rotation: 2060,
+        scale: 1.2,
+        filter: "drop-shadow(0 0 20px white)",
+        duration: 2,
+        ease: "power2.inOut",
+        yoyo: true,
+        repeat: -1,
+      });
+  
+      
+    }, []);
   
   
   return (
-    <div className="relative w-full bg-black max-sm:h-[60vh] max-sm:pb-[50%]">
+    <div className="relative w-full bg-black max-sm:h-[100vh] max-sm:pb-[50%]">
       {/* <div className="fixed inset-0 z-15">
         <Canvas camera={{ position: [0, 0, 10] }}>
           <Suspense fallback={null}>
@@ -44,10 +64,11 @@ Your Vision - Our Mission
 </h1>
       
 
-      <div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-[30%] px-4 py-12 md:py-24">
+      <div className="flex flex-col md:flex-row items-center justify-center gap-10  px-4 py-12 md:py-24">
         <div className="text-5xl md:text-7xl lg:text-8xl font-medium text-white text-center md:text-left">
         Mutual
         </div>
+        <img src="/dev/images/logofront.svg" className='circle w-50' alt="" />
         <div className="text-5xl md:text-7xl lg:text-8xl font-medium text-white text-center md:text-right">
         Growth
         </div>

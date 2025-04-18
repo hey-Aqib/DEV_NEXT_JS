@@ -1,6 +1,8 @@
 'use client';
 import { useState, useEffect } from 'react';
 import LoadingScreen from './LoadingScreen';
+import Navbar from './Navbar';
+import Footer from './Footer';
 
 export default function SplashWrapper({ children }) {
   const [loading, setLoading] = useState(true);
@@ -24,7 +26,9 @@ export default function SplashWrapper({ children }) {
       </div>
 
       <div className={`transition-opacity duration-1000 ${loading ? 'opacity-0' : 'opacity-100'}`}>
+        <Navbar/>
         {children}
+        <Footer/>
       </div>
     </>
   );

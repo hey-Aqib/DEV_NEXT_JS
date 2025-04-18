@@ -134,23 +134,22 @@ const Footer = () => {
         id="LeftHand"
         src="/dev/images/Handleft.avif"
         alt=""
-        className="absolute max-sm:top-[50%] top-[30%] -left-[05%] w-[60%]"
+        className="absolute max-sm:top-[50%] top-[30%] -left-[05%] w-[60%] z-50"
       />
       <img
         id="RightHand"
         src="/dev/images/Handright.avif"
         alt=""
-        className="absolute max-sm:top-[51%] top-[35%] left-[55%] w-[55%] max-sm:w-[50%]"
+        className="absolute max-sm:top-[51%] top-[35%] left-[55%] w-[55%] max-sm:w-[50%] z-50"
       />
       <div
         ref={cursorRef}
         className="absolute top-8 -left-15 w-6 h-6 pointer-events-none z-50 cursor-pointer"
       >
         <div className="relative w-32 h-28">
-          <div className="absolute inset-1 clip-hex bg-gradient-to-br from-blue-500 to-purple-600 z-10" style={{
-          clipPath: "polygon(20px 0%, calc(100% - 20px) 0%, 100% 20px, 100% calc(100% - 20px), calc(100% - 20px) 100%, 20px 100%, 0% calc(100% - 20px), 0% 20px)",
-        }}></div>
-          <div className="relative z-20 flex items-center justify-center w-full h-full text-white font-bold p-10" >
+          <img className="absolute inset-1 z-10" src="/dev/images/circle_star.svg" alt="" />
+          
+          <div className="relative text-center z-20 flex items-center justify-center w-[50%] h-full text-white font-bold p-18 leading-3.5" >
             CONNECT NOW
           </div>
         </div>

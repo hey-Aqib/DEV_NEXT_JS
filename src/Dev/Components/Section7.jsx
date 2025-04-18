@@ -92,7 +92,7 @@ const Section7 = () => {
           Technologies We Use
         </h1>
         <p className="w-[92%] max-sm:text-center max-sm:mx-0 max-sm:w-[100%] max-sm:text-sm 2xl:w-[50%] px-2 mx-10 text-xl mt-5">
-          Dev Pandas integrates a mix of technologies to deliver top-tier
+          CBS integrates a mix of technologies to deliver top-tier
           solutions for our clients. Our technology toolkit features
         </p>
       </div>

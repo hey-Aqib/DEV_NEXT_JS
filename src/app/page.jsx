@@ -24,7 +24,6 @@ export default async function Home() {
   
   return (
     <>
-    <Navbar/>
     <Hero/>
     <Section2/>
     <Section3/>
@@ -37,7 +36,6 @@ export default async function Home() {
     <Section10/>
     <Section11/>
     <Section12/>
-    <Footer/>
     </>
   );
 }

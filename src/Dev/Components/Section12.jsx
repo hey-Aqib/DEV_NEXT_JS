@@ -33,7 +33,6 @@ export default function Section12() {
       ease: "power2.out",
     });
 
-    // forward and reverse animation of logo
     ScrollTrigger.create({
       trigger: document.body, 
       start: "top top",
@@ -130,7 +129,7 @@ export default function Section12() {
 
         <img
           ref={pandaRef}
-          src="/images/panda.avif"
+          src="/dev/images/panda.avif"
           alt="Panda"
           className="absolute w-[14%] h-[12%] max-sm:w-[14%] max-sm:h-[15%] max-sm:top-3 md:w-[12%] md:h-[18%] lg:w-[12%] lg:h-[18%] xl:w-[12%] xl:h-[18%]"
           style={{ zIndex: 10, opacity: 0 }}

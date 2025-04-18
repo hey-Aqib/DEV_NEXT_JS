@@ -6,6 +6,26 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 const Section3 = () => {
   const imgRef = useRef(null);
 
+  useEffect(() => {
+    gsap.set(".solutions", {
+      transformOrigin: "50% 50%",
+      scale: 0.5,
+      filter: "drop-shadow(0 0 0px white)",
+    });
+  
+    gsap.to(".solutions", {
+      rotation: 2060,
+      scale: 1.2,
+      filter: "drop-shadow(0 0 20px white)",
+      duration: 2,
+      ease: "power2.inOut",
+      yoyo: true,
+      repeat: -1,
+    });
+
+    
+  }, []);
+
   const serviceSections = [
     {
       id: "01",
@@ -14,19 +34,19 @@ const Section3 = () => {
         "At Corecentrix Business Solutions, we provide comprehensive services designed to drive growth, enhance visibility, and increase ROI for businesses across various industries. Our holistic approach integrates cutting-edge marketing strategies with advanced development and IT solutions to ensure your business thrives in today’s competitive landscape.",
       leftCards: [
         {
-          img: "/dev/images/blocks.svg",
+          img: "/dev/images/solution logo 1.svg",
           title: "Organic Marketing",
           desc: "Harness the Power of Organic Growth Our proven strategies have led to a 150% average increase in search engine rankings and a 120% boost in website traffic for our clients.",
         },
         {
-          img: "/dev/images/triple_blocks.svg",
+          img: "/dev/images/Team Work Logo.svg",
           title: "Paid Marketing",
           desc: "With our data-driven approach, clients have experienced up to a 300% return on ad spend and a 70% increase in lead generation within the first three months.",
         },
       ],
       middleLine: "/dev/images/large_line.svg",
       rightCard: {
-        img: "/dev/images/double_blocks.svg",
+        img: "/dev/images/Team Work Logo 2.svg",
         title: "Development Solutions",
         desc: "Build Robust Digital Experiences We design and develop websites tailored to your brand, ensuring a seamless user experience that enhances engagement and drives conversions.",
       },
@@ -38,27 +58,27 @@ const Section3 = () => {
       id: "02",
       title: "Key Services and Value Proposition",
       description:
-        "At Dev Pandas, we are dedicated to delivering a full spectrum of services that push your business forward. Our core services",
+        "At CBS, we are dedicated to delivering a full spectrum of services that push your business forward. Our core services",
       leftCards: [
         {
-          img: "/dev/images/large_small_blocks.svg",
-          title: "Software Development",
-          desc: "Developing custom software, mobile apps, and web platforms tailored to your business needs",
+          img: "/dev/images/Team Work Logo 3.svg",
+          title: "IT & Software Solutions",
+          desc: "We provide secure, scalable, and reliable solutions that improve efficiency and productivity. Clients have reported a 30% reduction in operational costs and a 50% increase in system uptime after implementing our solutions",
         },
         {
-          img: "/dev/images/blue_blocks.svg",
-          title: "Software Development",
-          desc: "Developing custom software, mobile apps, and web platforms tailored to your business needs",
+          img: "/dev/images/solutions logo 6.svg",
+          title: "Ineffective Marketing Strategies",
+          desc: "Businesses often see poor returns from marketing that doesn’t reach the right audience. Our Paid Marketing Solutions focus on data-driven strategies, optimizing ad spend to deliver up to a 300% ROI, ensuring your investment generates significant returns.",
         },
       ],
       middleLine: "/dev/images/large_line.svg",
       rightCard: {
         img: "/dev/images/for_small.svg",
-        title: "Software Development",
-        desc: "Developing custom software, mobile apps, and web platforms tailored to your business needs",
+        title: "Weak Digital Presence",
+        desc: "A lack of visibility online can lead to missed opportunities and lower profits. Our Organic Marketing Solutions enhance your digital footprint, improving search rankings by up to 150% and driving high-quality traffic to your site, resulting in higher engagement and sales.",
       },
       bottomText:
-        "Our value proposition is rooted in our commitment to excellence and our skill in employing the latest technologies to achieve outstanding results. We blend deep technical knowledge with an understanding of industry-specific challenges to deliver solutions that geniunly make a difference",
+        "At Corecentrix Business Solutions, we specialize in driving digital growth that delivers measurable results. Our data-driven approach has helped clients achieve up to a 200% increase in return on investment (ROI) and a 150% boost in online visibility. By combining innovative strategies with a deep understanding of market dynamics, we ensure your brand reaches its full potential. Partner with us to transform your digital presence, enhance customer engagement, and unlock new revenue streams. Experience the Corecentrix difference and take your business to new heights with our expertise in digital growth.",
       topLine: null,
     },
   ];
@@ -94,12 +114,12 @@ const Section3 = () => {
                 {section.leftCards.map((card, index) => (
                   <div key={index} className="max-sm:text-center mb-15 max-sm:mb-10">
                     <img
-                      className="w-[50%] max-sm:w-[40%]
+                      className="solutions w-[50%] max-sm:w-[40%]
                        max-sm:ml-[30%] relative z-20"
                       src={card.img}
                       alt=""
                     />
-                    <h1 className="mt-5 text-4xl w-full md:w-[50%] max-sm:text-2xl">
+                    <h1 className="mt-5 text-4xl w-full md:w-[100%] max-sm:text-2xl">
                       {card.title}
                     </h1>
                     <p className="mt-10 max-sm:mt-5">{card.desc}</p>
@@ -116,11 +136,11 @@ const Section3 = () => {
               <div className="p-4 mt-20 w-full md:w-[60%] max-sm:mt-10 max-sm:w-[90%] max-sm:p-0 max-sm:text-center">
                 <div>
                   <img
-                    className="w-[50%] max-sm:w-[40%] max-sm:ml-[30%] relative z-20"
+                    className="solutions w-[50%] max-sm:w-[40%] max-sm:ml-[30%] relative z-20"
                     src={section.rightCard.img}
                     alt=""
                   />
-                  <h1 className="mt-10 text-4xl w-full md:w-[50%] max-sm:text-2xl">
+                  <h1 className="mt-10 text-4xl w-full md:w-[100%] max-sm:text-2xl">
                     {section.rightCard.title}
                   </h1>
                   <p className="mt-10 max-sm:mt-5">{section.rightCard.desc}</p>

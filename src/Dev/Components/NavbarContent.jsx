@@ -121,11 +121,6 @@ const NavbarContent = ({ ulRef }) => {
               </FlipLink>
             </li>
             <li>
-              <FlipLink to="/Enterprise-Level-Reachn">
-                Enterprise Level Reach
-              </FlipLink>
-            </li>
-            <li>
               <FlipLink to="/SEO-for-Leads">SEO for Leads</FlipLink>
             </li>
             <li>
@@ -146,18 +141,18 @@ const NavbarContent = ({ ulRef }) => {
         {openSections.marketing && (
           <ul className="flex flex-col py-4 gap-6 pl-4 max-sm:pl-0 mt-2 text-wrap">
             <li>
-              <FlipLink to="/PPC-Ads">PPC & Ads</FlipLink>
+              <FlipLink to="/paid-media-advertisement">PPC & Ads</FlipLink>
             </li>
             <li>
-              <FlipLink to="/Social-Media-Campaigning">
+              <FlipLink to="/Social-Media-Marketing">
                 Social Media Campaigning
               </FlipLink>
             </li>
             <li>
-              <FlipLink to="/Email-Marketing">Email Marketing</FlipLink>
+              <FlipLink to="/email-marketing">Email Marketing</FlipLink>
             </li>
             <li>
-              <FlipLink to="/Amazon-Marketplace">Amazon Marketplace</FlipLink>
+              <FlipLink to="/SEO-for-Amazon">Amazon Marketplace</FlipLink>
             </li>
           </ul>
         )}
@@ -174,33 +169,42 @@ const NavbarContent = ({ ulRef }) => {
         {openSections.development && (
           <ul className="flex flex-col py-4 gap-6 pl-4 max-sm:pl-0 mt-2 text-wrap">
             <li>
-              <FlipLink to="/Wordpress-Development">
+              <FlipLink to="/wordpress-website-development">
                 Wordpress Website Development
               </FlipLink>
             </li>
             <li>
-              <FlipLink to="/E-Commerce-Solution">E-Commerce Solution</FlipLink>
+              <FlipLink to="/e-commerce-website-development">E-Commerce Solution</FlipLink>
             </li>
             <li>
-              <FlipLink to="/Logo-Development">Logo Development</FlipLink>
+              <FlipLink to="/logo">Logo Development</FlipLink>
             </li>
             <li>
-              <FlipLink to="/Interactive-UI-UX">Interactive UI/UX</FlipLink>
+              <FlipLink to="/ui-ux">Interactive UI/UX</FlipLink>
             </li>
             <li>
-              <FlipLink to="/Video-Production">Video Production</FlipLink>
+              <FlipLink to="/Video-production">Video Production</FlipLink>
             </li>
             <li>
-              <FlipLink to="/App-Development">App Development</FlipLink>
+              <FlipLink to="/app-development">App Development</FlipLink>
             </li>
             <li>
-              <FlipLink to="/CRM-Generation">CRM Generation</FlipLink>
+              <FlipLink to="/crm">CRM Generation</FlipLink>
             </li>
             <li>
-              <FlipLink to="/CMS-Solution">CMS Solution</FlipLink>
+              <FlipLink to="/Software-Development">CMS Solution</FlipLink>
             </li>
           </ul>
         )}
+        <li>
+              <FlipLink to="/Who-We-Are">Who-We-Are</FlipLink>
+            </li>
+            <li>
+              <FlipLink to="/How-It-Works">How-It-Works</FlipLink>
+            </li>
+            <li className="md:hidden">
+              <FlipLink to="/contact">Contact</FlipLink>
+            </li>
       </li>
     </ul>
   );

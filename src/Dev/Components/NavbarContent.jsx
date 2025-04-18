@@ -196,10 +196,10 @@ const NavbarContent = ({ ulRef }) => {
             </li>
           </ul>
         )}
-        <li>
+        <li className="pt-6">
               <FlipLink to="/Who-We-Are">Who-We-Are</FlipLink>
             </li>
-            <li>
+            <li className="py-6">
               <FlipLink to="/How-It-Works">How-It-Works</FlipLink>
             </li>
             <li className="md:hidden">

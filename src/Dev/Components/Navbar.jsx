@@ -178,7 +178,7 @@ const Navbar = () => {
 
           {isVisible && (
             <div className="fixed top-0 right-0 w-full h-full flex justify-end items-start z-200 p-10 text-white pointer-events-auto">
-              <div className="relative w-[100%] sm:w-[28%] md:w-[28%] lg:w-[28%] xl:w-[28%] 2xl:w-[28%] z-100">
+              <div className="relative w-[100%] sm:w-[28%] md:w-[30%] 2xl:w-[28%] z-100">
                 <button
                   className="ml-[86.7%] -mt-[8.5%] max-sm:-mt-[8%] max-sm:-mr-[6%] md:-mt-4 md:mr-2 lg:-mt-2 lg:mr-2 xl:-mt-2 xl:mr-2 2xl:-mt-2 2xl:mr-2 float-end px-4 py-4 text-md font-bold text-white bg-[#111111] border-none cursor-pointer outline-none rounded-full close"
                   onClick={closeMenu}

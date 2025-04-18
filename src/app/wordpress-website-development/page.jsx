@@ -95,50 +95,50 @@ const page = () => {
 
   const SEOTpyes = [
     {
-      title: "Custom Contact Forms",
-      dis: "We design and integrate highly responsive contact forms tailored to your business needs. These forms are user-friendly, allowing potential clients to easily submit their inquiries or requests, increasing the likelihood of conversions. Whether it’s for lead generation, inquiries, or feedback, our forms are designed to capture valuable customer information effortlessly, ensuring you never miss a business opportunity.",
+      title: "Custom Design & Development",
+      dis: "Our team doesn’t believe in one-size-fits-all templates. We work closely with you to understand your brand, audience, and goals, creating a fully customized WordPress website that reflects your unique identity. From sleek, modern designs to intuitive layouts, we ensure every element is crafted with purpose—enhancing both aesthetics and functionality. We also offer tailored plugins and features to meet your business’s specific needs, ensuring a personalized experience for your users.",
     },
     {
-      title: "Strategic Call-to-Actions (CTAs)",
-      dis: "Our expertly crafted CTAs are placed strategically throughout your website to guide users toward taking decisive action, such as scheduling an appointment, making a purchase, or requesting a quote. These CTAs are designed to be attention-grabbing and aligned with your overall business goals, driving immediate responses and enhancing user engagement, leading to higher conversion rates.",
+      title: "SEO-Optimized Structure",
+      dis: "We build every website with an SEO-first mindset, ensuring your site is not only visually appealing but also primed to rank high in search engines. From clean code and optimized images to meta tags, alt texts, and proper use of headers, we implement the latest SEO best practices. We also ensure a logical URL structure and create content that aligns with your keyword strategy, driving organic traffic and improving your visibility in search results, giving you a competitive edge online.",
     },
     {
-      title: "Area-Wise Targeting",
-      dis: "We specialize in localized SEO strategies that allow your business to focus on specific geographical areas. This includes optimizing content, keywords, and your Google Business Profile for the areas you want to target, helping you rank higher in local search results. By zeroing in on specific locations, your business will attract local customers who are more likely to convert, giving you a competitive edge in your market.",
+      title: "Mobile-First, Fully Responsive Design",
+      dis: "With over 50% of web traffic now coming from mobile devices, we prioritize responsive design from the outset. Every site we create is built on a mobile-first framework, ensuring seamless functionality across all screen sizes, from smartphones and tablets to desktops. We rigorously test each design to ensure optimal performance and user experience, regardless of the device. This guarantees your visitors enjoy fast, intuitive navigation and a consistent brand experience, helping to increase engagement and reduce bounce rates.",
     },
     {
-      title: "Keyword Targeting",
-      dis: "We perform in-depth keyword research to identify the most relevant and high-converting search terms for your business. Our SEO experts then incorporate these keywords into your website content, meta tags, and headings, ensuring that search engines recognize your site for these terms. This targeted approach not only increases your visibility but also ensures that the traffic you receive is more likely to convert into leads and sales.",
+      title: "Speed & Performance Optimization",
+      dis: "Speed is crucial to both user experience and SEO rankings. A slow-loading website can frustrate users and lead to high bounce rates. To prevent this, we optimize every aspect of your WordPress site for peak performance, from reducing image sizes and utilizing browser caching to minifying CSS and JavaScript files. We implement advanced techniques like Content Delivery Networks (CDN) and server-side caching to ensure that your website loads quickly and efficiently, even under heavy traffic.",
     },
     {
-      title: "Mobile-Optimized Design",
-      dis: "In today’s mobile-first world, having a website that performs seamlessly on smartphones and tablets is crucial. We ensure your website and landing pages are fully optimized for mobile devices, providing a fast, responsive, and visually appealing user experience across all platforms. This not only improves user engagement but also boosts your site’s rankings, as search engines prioritize mobile-friendly websites.",
+      title: "Enhanced Security Features",
+      dis: "Cybersecurity threats are constantly evolving, and protecting your website is paramount. Our WordPress development services include robust security measures such as secure hosting, SSL certificates, malware scanning, and firewalls to protect your site from hackers, spam, and data breaches. We also employ regular updates and security patches to minimize vulnerabilities, perform site backups, and implement two-factor authentication (2FA) to keep your data secure, ensuring your business and customers are safeguarded from online threats.",
     },
     {
-      title: "Performance Analytics & Reporting",
-      dis: "To help you track the effectiveness of your online presence, we provide comprehensive analytics and reporting tools. These reports give you detailed insights into traffic sources, user behavior, conversion rates, and keyword performance. With these valuable insights, you can continuously refine your strategies, make data-driven decisions, and measure the return on investment (ROI) of your digital marketing efforts.",
+      title: "Scalable & Future-Proof Solutions",
+      dis: "As your business grows, so should your website. Our WordPress solutions are designed to be fully scalable, allowing for seamless expansion without compromising site performance. Whether you need to add e-commerce functionality, integrate third-party APIs, or expand your site’s content and features, we build websites with a flexible architecture that accommodates future growth. This future-proof approach means your site is always ready to evolve with your business, eliminating the need for costly overhauls down the line.",
     },
   ];
 
   const FAQS = [
     {
-      title: "What is landing page optimization?",
-      dis: "Landing page optimization involves designing and improving a landing page to increase its effectiveness in converting visitors into leads or customers. This includes enhancing elements such as content, layout, call-to-action buttons, and SEO strategies to improve user experience and drive better results.",
+      title: "What is WordPress and why should I use it for my website?",
+      dis: "WordPress is a versatile content management system (CMS) that allows you to create and manage websites easily. It offers a wide range of themes and plugins, making it highly customizable. It's user-friendly, SEO-friendly, and supports a variety of functionalities, making it a popular choice for businesses of all sizes.",
     },
     {
-      title: "Why is landing page optimization important for my business?",
-      dis: "Optimizing your landing pages helps ensure that they are aligned with your business goals and target audience. It can significantly increase conversion rates, improve search engine rankings, and drive more qualified traffic to your site, leading to better overall business performance.",
+      title: "How long does it take to build a WordPress website?",
+      dis: "The timeline for building a WordPress website depends on the complexity of the project. A basic website can take a few weeks, while more complex sites with custom features or e-commerce functionality might take several months. We’ll provide a detailed timeline based on your specific requirements.",
     },
 
     {
-      title: "How does landing page optimization affect SEO?",
-      dis: "Proper optimization of landing pages includes implementing SEO best practices such as keyword-rich content, meta tags, and proper HTML structure. This helps improve your landing page’s visibility in search engine results, leading to higher rankings and increased organic traffic.",
+      title: "Can I make changes to my website after it's launched?",
+      dis: "Yes, you can make changes to your website after launch. WordPress allows you to easily update content, add new pages, and modify designs through the admin dashboard. For more advanced changes, you might need the help of a developer.",
     },
 
 
     {
-      title: "How long does it take to see results from landing page optimization?",
-      dis: "The timeframe for seeing results can vary depending on several factors, including the competitiveness of your industry, the effectiveness of the optimization strategies, and the existing performance of your landing page. Generally, you can start seeing improvements in traffic and conversion rates within a few weeks to a few months.",
+      title: "How do you approach SEO for WordPress websites?",
+      dis: "We incorporate SEO best practices into the development process to help your WordPress website rank higher in search engine results. This includes optimizing site structure, meta tags, keywords, and content, as well as ensuring fast load times and mobile responsiveness. We also offer ongoing SEO services to further enhance your site’s visibility.",
     },
   ];
 
@@ -146,69 +146,76 @@ const page = () => {
     {
       name: "Basic Package",
       features: [
-        { title: "SEO Audits", detail: "Basic site audit" },
+        { title: "Custom Design", detail: "Pre-designed templates" },
         {
-          title: "Keyword Research & Strategy",
-          detail: "10 targeted keywords",
+          title: "Responsive Design",
+          detail: "Mobile-friendly design",
         },
-        { title: "On-Page SEO", detail: "Meta tags optimization" },
-        { title: "Off-Page SEO", detail: "Basic link building" },
-        { title: "Technical SEO", detail: "Basic technical fixes" },
-        { title: "Content Creation & Optimization", detail: "" },
+        { title: "Content Management System", detail: "Basic CMS setup" },
+        { title: "SEO Optimization", detail: "Basic SEO setup" },
+        { title: "Security Features", detail: "Basic security measures" },
+        { title: "Performance Optimization", detail: "Basic performance tuning" },
+        { title: "E-Commerce Functionality", detail: "Not included" },
+        { title: "Support & Maintenance", detail: "Limited post-launch support" },
+        { title: "Plugin Integration", detail: "Essential plugins" },
+        { title: "Training & Documentation", detail: "Basic documentation" },
       ],
       featured: false,
     },
     {
       name: "Standard Package",
       features: [
-        { title: "SEO Audits", detail: "Comprehensive site audit" },
+        { title: "Custom Design", detail: "Basic custom design" },
         {
-          title: "Keyword Research & Strategy",
-          detail: "25 targeted keywords",
+          title: "Responsive Design",
+          detail: "Responsive across devices",
         },
-        { title: "On-Page SEO", detail: "Full on-page optimization" },
-        { title: "Off-Page SEO", detail: "Moderate link building" },
-        { title: "Technical SEO", detail: "Full technical audit & fixes" },
-        {
-          title: "Content Creation & Optimization",
-          detail: "4 pieces per month",
-        },
+        { title: "Content Management System", detail: "CMS with additional plugins" },
+        { title: "SEO Optimization", detail: "On-page SEO optimization" },
+        { title: "Security Features", detail: "Enhanced security protocols" },
+        { title: "Performance Optimization", detail: "Improved speed and performance" },
+        { title: "E-Commerce Functionality", detail: "Basic e-commerce setup" },
+        { title: "Support & Maintenance", detail: "3 months of support and updates" },
+        { title: "Plugin Integration", detail: "Standard plugins integration" },
+        { title: "Training & Documentation", detail: "User training" },
       ],
       featured: false,
     },
     {
       name: "Premium Package",
       features: [
-        { title: "SEO Audits", detail: "Full technical and UK audit" },
+        { title: "Custom Design", detail: "Advanced custom design" },
         {
-          title: "Keyword Research & Strategy",
-          detail: "50 targeted keywords",
+          title: "Responsive Design",
+          detail: "Enhanced responsiveness",
         },
-        { title: "On-Page SEO", detail: "Advanced on-page techniques" },
-        { title: "Off-Page SEO", detail: "Aggressive link building" },
-        { title: "Technical SEO", detail: "Advanced technical optimization" },
-        {
-          title: "Content Creation & Optimization",
-          detail: "8 pieces per month",
-        },
+        { title: "Content Management System", detail: "Advanced CMS features" },
+        { title: "SEO Optimization", detail: "Advanced SEO strategies" },
+        { title: "Security Features", detail: "Advanced security features" },
+        { title: "Performance Optimization", detail: "Comprehensive performance optimization" },
+        { title: "E-Commerce Functionality", detail: "Advanced e-commerce features" },
+        { title: "Support & Maintenance", detail: "6 months of support and updates" },
+        { title: "Plugin Integration", detail: "Premium plugins and integrations" },
+        { title: "Training & Documentation", detail: "Comprehensive training and documentation" },
       ],
       featured: true,
     },
     {
       name: "Enterprise Package",
       features: [
-        { title: "SEO Audits", detail: "In-depth audit + competitor analysis" },
+        { title: "Custom Design", detail: "Fully bespoke design" },
         {
-          title: "Keyword Research & Strategy",
-          detail: "Custom strategy with 100+ keywords",
+          title: "Responsive Design",
+          detail: "Fully optimized for all devices",
         },
-        { title: "On-Page SEO", detail: "Complete on-page overhaul" },
-        { title: "Off-Page SEO", detail: "Advanced outreach + PR strategies" },
-        { title: "Technical SEO", detail: "Custom technical solutions" },
-        {
-          title: "Content Creation & Optimization",
-          detail: "Unlimited content creation",
-        },
+        { title: "Content Management System", detail: "Comprehensive CMS with custom integrations" },
+        { title: "SEO Optimization", detail: "Complete SEO audit and optimization" },
+        { title: "Security Features", detail: "Top-tier security with regular updates" },
+        { title: "Performance Optimization", detail: "Premium performance and caching solutions" },
+        { title: "E-Commerce Functionality", detail: "Fully integrated e-commerce solution" },
+        { title: "Support & Maintenance", detail: "12 months of premium support and maintenance" },
+        { title: "Plugin Integration", detail: "Custom plugins and advanced integrations" },
+        { title: "Training & Documentation", detail: "In-depth training and personalized documentation" },
       ],
       featured: false,
     },
@@ -228,7 +235,7 @@ const page = () => {
               ref={mainHeading}
               className="text-white text-center text-8xl max-sm:text-4xl font-bold z-10"
             >
-              Landing Page  <br /> Optimization
+              WordPress Website <br /> Development
             </h1>
           </div>
         </div>
@@ -249,12 +256,10 @@ const page = () => {
             </div>
             <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center max-sm:text-left max-sm:px-8">
               <h1 className="max-sm:text-2xl text-3xl mb-4 font-bold text-white">
-                Landing Page Optimization: Efficient results for quick and easy Search Engine Placement
+              Expert WordPress Website Development: Crafting High-Performance, User-Centric Sites for Unmatched Business Success
               </h1>
               <p className="mb-8 leading-relaxed">
-                Our landing page optimization service ensures that your business starts on the right foot, even before we fully implement the solution. With our expertly crafted landing pages, your business gains a strong digital presence, paving the way for faster search engine rankings.
-
-                Our approach combines proven SEO techniques with tailored design, allowing you to achieve results through conventional methods—just at a much quicker pace. Whether it’s boosting visibility or driving conversions, we make sure your business stands out with optimized landing pages that deliver efficient and measurable results.
+              Our WordPress Website Development service is designed to build visually stunning, highly responsive, and user-centric websites that drive business growth. Leveraging our deep expertise, we craft custom WordPress solutions tailored to your business needs, ensuring optimal performance, fast load times, and seamless user experiences. Whether it’s a simple corporate website or a complex e-commerce platform, we focus on creating sites that not only look great but also deliver measurable results—boosting conversions, enhancing SEO rankings, and strengthening your online presence. With a commitment to quality, security, and scalability, we help your business thrive in the digital landscape.
               </p>
               <div className="flex justify-center ">
                 <Link href={`/Contact`}>  <button className="inline-flex text-white border border-white px-6 py-3 rounded-lg text-lg hover:bg-white hover:text-black transition-colors duration-300">
@@ -271,10 +276,10 @@ const page = () => {
           <div className="container mx-auto flex  max-sm:flex-col-reverse gap-10 max-sm:gap-10  px-5 max-sm:px-2 py-15 max-sm:py-10   md:flex-row flex-col items-center">
             <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center max-sm:text-left max-sm:px-8">
               <h1 className=" max-sm:text-2xl text-3xl mb-4 font-bold text-white">
-                3x faster Results than a website
+              One-time Website Solution
               </h1>
               <p className="mb-8 leading-relaxed">
-                We take your business identity to the next level by placing it on our strategically pre-ranked domains. These domains already hold authority and credibility with search engines, giving your business a head start. Once we integrate your details with our custom-tailored SEO content, specifically designed to match your industry and audience, you’ll experience up to 3x faster results compared to traditional methods. This approach fast-tracks your online visibility, driving traffic and improving search engine rankings while ensuring your business stands out with optimized content and a solid digital foundation.
+              Our One-Time Website Solution offers businesses a comprehensive, fully-customized WordPress website designed to meet your goals without the ongoing hassle. We handle everything from initial design to final deployment, ensuring that your site is fast, secure, and user-friendly. Perfect for businesses seeking a high-quality, professional online presence without long-term development commitments, this solution provides all the essentials needed to launch a stunning and effective website in one go.
               </p>
               <div className="flex justify-center">
                 <Link href={`/Contact`}>  <button className="inline-flex text-white border border-white px-6 py-3 rounded-lg text-lg hover:bg-white hover:text-black transition-colors duration-300">
@@ -333,14 +338,12 @@ const page = () => {
             </div>
             <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left mb-16 max-sm:mb-2 md:mb-0 items-center text-center max-sm:text-left max-sm:px-8 ">
               <h1 className="max-sm:text-2xl text-3xl mb-4 font-bold text-white">
-                Landing Page Optimization as an Increase in Placement Strategy
+              Why Choose Us: The Unmatched Benefits of Our Expert WordPress Development Services
 
               </h1>
               <div>
                 <p className="mb-1 leading-relaxed">
-                  Our Landing Page Optimization service is designed to significantly boost your search engine placement and overall visibility. By creating highly targeted, SEO-friendly landing pages, we help your business rank higher in search results, driving more relevant traffic to your website.
-
-                  This strategic approach not only increases your placement on search engines but also improves user engagement, leading to higher conversion rates. With tailored content, focused keyword strategies, and ongoing optimization, our landing page solutions ensure your business is always in front of the right audience at the right time.
+                Partnering with us for your WordPress website development means more than just a beautiful design—it means getting a high-performance, secure, and scalable platform that is customized to fit your business needs. With years of experience, a client-centric approach, and a commitment to delivering measurable results, we ensure your website stands out and drives success. From SEO optimization to responsive design, we cover every aspect needed for a website that not only meets but exceeds your expectations.
                 </p>
 
               </div>

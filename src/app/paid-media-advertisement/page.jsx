@@ -95,50 +95,50 @@ const page = () => {
 
   const SEOTpyes = [
     {
-      title: "Custom Contact Forms",
-      dis: "We design and integrate highly responsive contact forms tailored to your business needs. These forms are user-friendly, allowing potential clients to easily submit their inquiries or requests, increasing the likelihood of conversions. Whether it’s for lead generation, inquiries, or feedback, our forms are designed to capture valuable customer information effortlessly, ensuring you never miss a business opportunity.",
+      title: "Search Engine Advertising (Google Ads)",
+      dis: "What It Is: Paid ads that appear on search engine results pages (SERPs) when users search for relevant keywords.How Corecentrix Ensures Results: We use advanced keyword research and competitor analysis to bid on high-intent keywords that align with your business goals. Our team optimizes ad copy and landing pages to boost click-through and conversion rates, ensuring that you appear in front of the right customers at the right time. Results include a 20-30% average increase in quality traffic and significantly higher lead conversion rates.",
     },
     {
-      title: "Strategic Call-to-Actions (CTAs)",
-      dis: "Our expertly crafted CTAs are placed strategically throughout your website to guide users toward taking decisive action, such as scheduling an appointment, making a purchase, or requesting a quote. These CTAs are designed to be attention-grabbing and aligned with your overall business goals, driving immediate responses and enhancing user engagement, leading to higher conversion rates.",
+      title: "Social Media Advertising (Facebook, Instagram, LinkedIn Ads)",
+      dis: "What It Is: Paid ads on social media platforms targeting specific demographics, interests, and behaviors.How Corecentrix Ensures Results: We create visually appealing ads with compelling messaging tailored to your target audience. Using A/B testing and detailed audience segmentation, we optimize ads for engagement, resulting in a 25% improvement in conversion rates and 40% more efficient ad spend. Whether it’s brand awareness, lead generation, or sales, our campaigns are tailored to your objectives.",
     },
     {
-      title: "Area-Wise Targeting",
-      dis: "We specialize in localized SEO strategies that allow your business to focus on specific geographical areas. This includes optimizing content, keywords, and your Google Business Profile for the areas you want to target, helping you rank higher in local search results. By zeroing in on specific locations, your business will attract local customers who are more likely to convert, giving you a competitive edge in your market.",
+      title: "Display Advertising (Banner Ads)",
+      dis: "What It Is: Visual ads that appear on third-party websites, apps, or YouTube, using image, video, or rich media formats. How Corecentrix Ensures Results: We design eye-catching banners and strategically place them on websites that your target audience frequents. Our targeting techniques reduce wasted impressions and increase brand visibility, achieving up to 3x higher click-through rates than industry benchmarks. Constant monitoring allows us to refine campaigns for better performance over time.",
     },
     {
-      title: "Keyword Targeting",
-      dis: "We perform in-depth keyword research to identify the most relevant and high-converting search terms for your business. Our SEO experts then incorporate these keywords into your website content, meta tags, and headings, ensuring that search engines recognize your site for these terms. This targeted approach not only increases your visibility but also ensures that the traffic you receive is more likely to convert into leads and sales.",
+      title: "Video Advertising (YouTube, Social Platforms)",
+      dis: "What It Is: Video ads appearing before or during online video content on platforms like YouTube and social media.How Corecentrix Ensures Results: We craft engaging video ads that resonate with your audience, combining storytelling with a strong call to action. By targeting the right demographics and interests, we drive up to 50% higher engagement rates and improve brand recall. We also analyze video completion rates to optimize future campaigns for better results.",
     },
     {
-      title: "Mobile-Optimized Design",
-      dis: "In today’s mobile-first world, having a website that performs seamlessly on smartphones and tablets is crucial. We ensure your website and landing pages are fully optimized for mobile devices, providing a fast, responsive, and visually appealing user experience across all platforms. This not only improves user engagement but also boosts your site’s rankings, as search engines prioritize mobile-friendly websites.",
+      title: "Retargeting Ads",
+      dis: "What It Is: Ads that target users who have previously visited your website or interacted with your content but didn’t convert. How Corecentrix Ensures Results: Our retargeting campaigns use precise audience segmentation to re-engage interested prospects and guide them through the funnel. By showing tailored ads based on previous behavior, we increase conversion rates by up to 70%, ensuring those who’ve already shown interest in your brand take action.",
     },
     {
-      title: "Performance Analytics & Reporting",
-      dis: "To help you track the effectiveness of your online presence, we provide comprehensive analytics and reporting tools. These reports give you detailed insights into traffic sources, user behavior, conversion rates, and keyword performance. With these valuable insights, you can continuously refine your strategies, make data-driven decisions, and measure the return on investment (ROI) of your digital marketing efforts.",
-    },
+      title: "Native Advertising",
+      dis: "What It Is: Ads that blend seamlessly with the content on the platforms where they appear, often seen on news outlets or blogs. How Corecentrix Ensures Results: We develop native ads that feel like natural content, enhancing user experience while subtly promoting your brand. This results in higher engagement, with ads generating 53% more views than traditional banner ads, all while maintaining authenticity and trust.",
+    }
   ];
 
   const FAQS = [
     {
-      title: "What is landing page optimization?",
-      dis: "Landing page optimization involves designing and improving a landing page to increase its effectiveness in converting visitors into leads or customers. This includes enhancing elements such as content, layout, call-to-action buttons, and SEO strategies to improve user experience and drive better results.",
+      title: "What is paid advertising?",
+      dis: "Paid advertising involves purchasing ad space on various digital platforms to promote your products or services. This can include search engines, social media, display networks, and more. The goal is to increase visibility, drive traffic, and generate leads or sales",
     },
     {
-      title: "Why is landing page optimization important for my business?",
-      dis: "Optimizing your landing pages helps ensure that they are aligned with your business goals and target audience. It can significantly increase conversion rates, improve search engine rankings, and drive more qualified traffic to your site, leading to better overall business performance.",
+      title: "How does paid advertising work?",
+      dis: "Paid advertising works by targeting specific audiences with ads based on their interests, behavior, and demographics. Advertisers bid for ad placements, and the ads are shown to users who fit the target criteria. Performance is tracked, and adjustments are made to optimize results.",
     },
 
     {
-      title: "How does landing page optimization affect SEO?",
-      dis: "Proper optimization of landing pages includes implementing SEO best practices such as keyword-rich content, meta tags, and proper HTML structure. This helps improve your landing page’s visibility in search engine results, leading to higher rankings and increased organic traffic.",
+      title: "How do I measure the success of my paid ads?",
+      dis: "Success is measured using key performance indicators (KPIs) such as click-through rates (CTR), conversion rates, cost per click (CPC), and return on investment (ROI). Analytics tools and reports provide insights into how well your ads are performing and where adjustments may be needed.",
     },
 
 
     {
-      title: "How long does it take to see results from landing page optimization?",
-      dis: "The timeframe for seeing results can vary depending on several factors, including the competitiveness of your industry, the effectiveness of the optimization strategies, and the existing performance of your landing page. Generally, you can start seeing improvements in traffic and conversion rates within a few weeks to a few months.",
+      title: "How can Corecentrix help with my paid advertising efforts?",
+      dis: "Corecentrix provides comprehensive paid advertising services, including audience targeting, ad creation, budget optimization, and performance tracking. Our data-driven approach and expertise ensure that your ads reach the right audience and deliver the best possible results for your business.",
     },
   ];
 
@@ -228,7 +228,7 @@ const page = () => {
               ref={mainHeading}
               className="text-white text-center text-8xl max-sm:text-4xl font-bold z-10"
             >
-              Landing Page  <br /> Optimization
+             Paid Media <br/> Advertisement
             </h1>
           </div>
         </div>
@@ -249,12 +249,10 @@ const page = () => {
             </div>
             <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center max-sm:text-left max-sm:px-8">
               <h1 className="max-sm:text-2xl text-3xl mb-4 font-bold text-white">
-                Landing Page Optimization: Efficient results for quick and easy Search Engine Placement
+              Dominate Your Market with Corecentrix: 200%+ ROI Growth Through Precision-Powered Paid Digital Marketing
               </h1>
               <p className="mb-8 leading-relaxed">
-                Our landing page optimization service ensures that your business starts on the right foot, even before we fully implement the solution. With our expertly crafted landing pages, your business gains a strong digital presence, paving the way for faster search engine rankings.
-
-                Our approach combines proven SEO techniques with tailored design, allowing you to achieve results through conventional methods—just at a much quicker pace. Whether it’s boosting visibility or driving conversions, we make sure your business stands out with optimized landing pages that deliver efficient and measurable results.
+              Unlock unparalleled business growth with Corecentrix’s precision-powered Paid Digital Marketing solutions, designed to deliver measurable success. Our data-driven strategies have consistently generated over 200% ROI for clients across various industries. With 85% improved ad click-through rates and a 60% reduction in customer acquisition costs, we optimize every dollar spent, ensuring your brand reaches the right audience at the right time.
               </p>
               <div className="flex justify-center ">
                 <Link href={`/Contact`}>  <button className="inline-flex text-white border border-white px-6 py-3 rounded-lg text-lg hover:bg-white hover:text-black transition-colors duration-300">
@@ -271,10 +269,10 @@ const page = () => {
           <div className="container mx-auto flex  max-sm:flex-col-reverse gap-10 max-sm:gap-10  px-5 max-sm:px-2 py-15 max-sm:py-10   md:flex-row flex-col items-center">
             <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center max-sm:text-left max-sm:px-8">
               <h1 className=" max-sm:text-2xl text-3xl mb-4 font-bold text-white">
-                3x faster Results than a website
+              Don’t waste a single click
               </h1>
               <p className="mb-8 leading-relaxed">
-                We take your business identity to the next level by placing it on our strategically pre-ranked domains. These domains already hold authority and credibility with search engines, giving your business a head start. Once we integrate your details with our custom-tailored SEO content, specifically designed to match your industry and audience, you’ll experience up to 3x faster results compared to traditional methods. This approach fast-tracks your online visibility, driving traffic and improving search engine rankings while ensuring your business stands out with optimized content and a solid digital foundation.
+              Every click counts, and at Corecentrix, we ensure none go to waste. With our expertly crafted Paid Digital Marketing strategies, we optimize your ad spend to deliver maximum results. Our precision targeting and continuous performance analysis help convert clicks into high-quality leads, driving an average 30% increase in conversion rates and reducing wasted spend by up to 40%. Whether through Google Ads, social media, or display networks, we ensure each click leads to meaningful engagement and measurable ROI. Don’t let potential customers slip through the cracks—partner with Corecentrix and make every click count.
               </p>
               <div className="flex justify-center">
                 <Link href={`/Contact`}>  <button className="inline-flex text-white border border-white px-6 py-3 rounded-lg text-lg hover:bg-white hover:text-black transition-colors duration-300">
@@ -333,14 +331,14 @@ const page = () => {
             </div>
             <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left mb-16 max-sm:mb-2 md:mb-0 items-center text-center max-sm:text-left max-sm:px-8 ">
               <h1 className="max-sm:text-2xl text-3xl mb-4 font-bold text-white">
-                Landing Page Optimization as an Increase in Placement Strategy
+              Increased business proposition with strategic Ad placements
 
               </h1>
               <div>
                 <p className="mb-1 leading-relaxed">
-                  Our Landing Page Optimization service is designed to significantly boost your search engine placement and overall visibility. By creating highly targeted, SEO-friendly landing pages, we help your business rank higher in search results, driving more relevant traffic to your website.
+                Strategic ad placements are the cornerstone of boosting your business proposition. At Corecentrix, we craft targeted advertising campaigns that place your brand in front of the right audience, at the right time, and in the most impactful spaces.
 
-                  This strategic approach not only increases your placement on search engines but also improves user engagement, leading to higher conversion rates. With tailored content, focused keyword strategies, and ongoing optimization, our landing page solutions ensure your business is always in front of the right audience at the right time.
+By leveraging data-driven insights and advanced ad placement techniques, we enhance visibility and engagement across platforms like Google, social media, and display networks. This precise targeting results in a 35% higher click-through rate and up to 50% more conversions, ensuring your ads not only reach more people but also drive measurable business growth.
                 </p>
 
               </div>

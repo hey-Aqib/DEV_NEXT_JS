@@ -94,19 +94,19 @@ const NavbarContent = ({ ulRef }) => {
   };
 
   return (
-    <ul ref={ulRef} className="z-50 uppercase space-y-2 mt-12 grid gap-2">
+    <ul ref={ulRef} className="z-50 uppercase space-y-2 mt-12 grid gap-2 w-full">
       <li>
         <button
           onClick={() => toggleSection("seo")}
-          className="hover:no-underline text-left w-full flex justify-between items-center text-2xl font-semibold text-black"
+          className="hover:no-underline text-left w-full flex justify-between items-center text-xl font-semibold text-black hover:text-gray-500"
         >
           SEO & Lead Generation
           <span>{openSections.seo ? "−" : "+"}</span>
         </button>
         {openSections.seo && (
-          <ul className="flex flex-col gap-2 pl-4 max-sm:pl-0 mt-2 text-wrap">
+          <ul className="flex flex-col py-4 gap-6 pl-4 max-sm:pl-0 mt-2 text-wrap">
             <li>
-              <FlipLink to="/search-engine-optimization">
+              <FlipLink to="/Search-Engine-Optimization">
                 Search Engine Optimization
               </FlipLink>
             </li>
@@ -129,7 +129,7 @@ const NavbarContent = ({ ulRef }) => {
               <FlipLink to="/SEO-for-Leads">SEO for Leads</FlipLink>
             </li>
             <li>
-              <FlipLink to="/SEO-for-Amazon">SEO for Amazon [wroking]</FlipLink>
+              <FlipLink to="/SEO-for-Amazon">SEO for Amazon</FlipLink>
             </li>
           </ul>
         )}
@@ -138,13 +138,13 @@ const NavbarContent = ({ ulRef }) => {
       <li>
         <button
           onClick={() => toggleSection("marketing")}
-          className="hover:no-underline text-left w-full flex justify-between items-center text-2xl font-semibold text-black"
+          className="hover:no-underline text-left w-full flex justify-between items-center text-xl font-semibold text-black hover:text-gray-500"
         >
           Paid Marketing Media & CRO
           <span>{openSections.marketing ? "−" : "+"}</span>
         </button>
         {openSections.marketing && (
-          <ul className="flex flex-col gap-2 pl-4 mt-2  max-sm:pl-0">
+          <ul className="flex flex-col py-4 gap-6 pl-4 max-sm:pl-0 mt-2 text-wrap">
             <li>
               <FlipLink to="/PPC-Ads">PPC & Ads</FlipLink>
             </li>
@@ -166,13 +166,13 @@ const NavbarContent = ({ ulRef }) => {
       <li>
         <button
           onClick={() => toggleSection("development")}
-          className="hover:no-underline text-left w-full flex justify-between items-center text-2xl font-semibold text-black"
+          className="hover:no-underline text-left w-full flex justify-between items-center text-xl font-semibold text-black hover:text-gray-500"
         >
           IT & Development Technology
           <span>{openSections.development ? "−" : "+"}</span>
         </button>
         {openSections.development && (
-          <ul className="flex flex-col gap-2 pl-4 mt-2  max-sm:pl-0">
+          <ul className="flex flex-col py-4 gap-6 pl-4 max-sm:pl-0 mt-2 text-wrap">
             <li>
               <FlipLink to="/Wordpress-Development">
                 Wordpress Website Development

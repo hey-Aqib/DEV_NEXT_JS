@@ -7,7 +7,6 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/Dev/Components/ui/accordion";
-
 import BusinessOperations from "@/Dev/Components/Business-operations";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";

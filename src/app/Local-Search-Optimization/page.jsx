@@ -13,6 +13,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 
 import { useGSAP } from "@gsap/react";
+import Link from "next/link";
 
 const page = () => {
   const sectionRef = useRef(null);
@@ -94,50 +95,50 @@ const page = () => {
 
   const SEOTpyes = [
     {
-      title: "SEO Audits",
-      dis: "At Corecentrix Business Solutions, our comprehensive SEO audits are the cornerstone of digital success. We meticulously analyze every facet of your website, from technical infrastructure to content quality and backlink profiles, to identify performance bottlenecks and opportunities for optimization. Our audits provide an in-depth assessment of your site’s SEO health, uncovering critical issues that could be hindering your search engine rankings. Leveraging advanced tools and analytics, we deliver actionable insights that form the foundation of a tailored SEO strategy, driving your business toward sustained visibility and growth.",
+      title: "Comprehensive Local SEO Audits",
+      dis: "Our process begins with an in -depth local SEO audit, analyzing your current online presence, competitor landscape, and potential growth areas.This audit identifies gaps and opportunities, providing a roadmap to enhance your search visibility.We use advanced tools to assess factors like keyword rankings, citation accuracy, and Google Business Profile optimization.On average, businesses that undergo our comprehensive audit see a 35% increase in local search traffic within the first 60 days.",
     },
     {
-      title: "On-Page Technical SEO",
-      dis: "Precision and expertise define our approach to On-Page Technical SEO. We fine-tune your website’s structure, ensuring that every element—meta tags, HTML markup, URL architecture, and site speed—is optimized for maximum search engine visibility and user experience. Our team dives deep into the intricacies of technical SEO, addressing issues like crawl errors, duplicate content, and schema markup to enhance search engine indexing and ranking potential. At Corecentrix, we bridge the gap between technical excellence and search engine performance, setting the stage for your website to achieve top rankings.",
+      title: "Optimizing Google Business Profile",
+      dis: "A well-optimized Google Business Profile is crucial for local SEO success. We enhance your profile with accurate information, engaging descriptions, high-quality images, and targeted keywords. Our experts ensure your profile is regularly updated with fresh content and customer reviews, significantly boosting your local search rankings. Statistics show that businesses with optimized Google Business Profiles enjoy a 70% increase in click-through rates from local searches.",
     },
     {
-      title: "Off-Page SEO",
-      dis: "Off-Page SEO is the art of building your website’s authority and relevance beyond its borders. Corecentrix employs a strategic approach to Off-Page SEO, encompassing high-quality link-building, social signals, and online reputation management. Our focus is on establishing your brand as an industry leader through earned media, influencer outreach, and authoritative backlinks. By amplifying your website’s credibility and enhancing its online footprint, we drive sustained traffic growth and strengthen your position in competitive search engine rankings.",
+      title: "Building and Managing Local Citations",
+      dis: "Accurate and consistent local citations across directories and review sites are essential for building trust with search engines and customers. We ensure your business information is uniform across all major platforms, reducing the risk of errors and improving your local SEO. This consistency can lead to a 20% improvement in local search rankings, helping your business appear more frequently in search results.",
     },
     {
-      title: "Keyword Research",
-      dis: "Keyword Research is the bedrock of any successful SEO campaign, and at Corecentrix, we execute it with unparalleled precision. Our advanced keyword analysis goes beyond basic search terms, delving into user intent, search volume, competition, and market trends to identify the most impactful keywords for your business. We craft a keyword strategy that aligns with your target audience’s search behavior, ensuring that your content resonates and ranks effectively. By understanding the language of your potential customers, we help you capture more qualified leads and achieve higher conversion rates.",
+      title: "Targeted Local Content Strategy",
+      dis: "Creating content that resonates with your local audience is key to establishing authority in your area. We develop a targeted content strategy that includes blog posts, local guides, and community-focused articles, all optimized for local keywords. This approach not only increases your website’s relevance but also drives engagement from local users. Clients utilizing our local content strategy see a 40% boost in local search traffic and a 25% increase in user engagement.",
     },
     {
-      title: "Content Creation & Optimization",
-      dis: "Content is king, but only when it’s crafted and optimized to perfection. Corecentrix specializes in creating high-quality, engaging content that not only attracts visitors but also compels them to act. Our content creation and optimization services integrate SEO best practices with compelling storytelling, ensuring that your content is both search engine-friendly and aligned with your brand voice. From blog posts to landing pages, we optimize every piece of content to rank higher in search results while delivering value to your audience, driving engagement, and boosting conversions",
+      title: "Leveraging Customer Reviews and Reputation Management",
+      dis: "Positive customer reviews are a powerful factor in local search rankings and customer decision-making. We help you implement effective strategies to encourage satisfied customers to leave positive reviews, while also managing and responding to feedback. Businesses that actively manage their online reputation with our services typically experience a 50% improvement in local search visibility and a higher conversion rate due to increased customer trus",
     },
     {
-      title: "Link Building",
-      dis: "Link Building is a critical component of SEO that requires expertise, strategy, and a network of high-authority sources. At Corecentrix, we employ ethical and effective link-building techniques that enhance your website’s authority and improve its rankings. Our approach includes acquiring quality backlinks from reputable websites, creating valuable content that attracts links naturally, and fostering relationships with industry influencers. By securing powerful backlinks, we help your site earn the trust of search engines and achieve long-term SEO success.",
+      title: "Advanced Data Analytics and Continuous Optimization",
+      dis: "Our work doesn’t stop once the initial optimizations are in place. We continuously monitor your local search performance using advanced data analytics tools to track key metrics such as search rankings, click-through rates, and customer engagement. This ongoing analysis allows us to make data-driven adjustments to your strategy, ensuring sustained growth. Our clients benefit from a continuous improvement approach, achieving a 30% year-over-year increase in local search traffic and conversions.",
     },
   ];
 
   const FAQS = [
     {
-      title: "What is SEO and why is it important for my business?",
-      dis: "SEO, or Search Engine Optimization, is the process of optimizing your website to rank higher on search engine results pages (SERPs). It is crucial for increasing your online visibility, driving organic traffic to your site, and ultimately boosting sales and revenue.",
+      title: "What is Local Search Optimization?",
+      dis: "Local Search Optimization is the process of enhancing your online presence to improve visibility in local search results. It involves optimizing your website, Google Business Profile, and other online listings to attract customers in your geographic area.",
     },
     {
-      title: "How long does it take to see results from SEO?",
-      dis: "SEO is a long-term strategy. Typically, you can start seeing noticeable improvements in your search rankings within 3 to 6 months, but it can take 6 to 12 months to achieve significant results, depending on your industry and competition.",
+      title: "Why is Local Search Optimization important for my business?",
+      dis: "Local Search Optimization helps your business appear in search results when potential customers look for products or services in your area. It drives targeted traffic, increases foot traffic, and enhances brand visibility within your local market.",
     },
-   
+
     {
-      title: "What are the key components of your SEO strategy?",
-      dis: "Our SEO strategy includes a comprehensive site audit, keyword research, on-page optimization, off-page SEO, content creation and optimization, link building, and continuous performance tracking and optimization.",
+      title: "How does Local Search Optimization differ from regular SEO?",
+      dis: "While regular SEO focuses on improving your website’s visibility across a broad range of searches, Local Search Optimization specifically targets local searches and aims to increase your business’s presence in a particular geographic area.",
     },
-    
-    
+
+
     {
-      title: "How do you measure the success of an SEO campaign?",
-      dis: "We use advanced analytics and tracking tools to monitor key metrics such as organic traffic, keyword rankings, conversion rates, and ROI. Regular reports and insights are provided to keep you informed of the progress and impact of your SEO campaign.",
+      title: "How do I optimize my Google Business Profile?",
+      dis: "To optimize your Google Business Profile, ensure that your business information is accurate and up-to-date, include relevant keywords in your business description, add high-quality photos, encourage and respond to customer reviews, and regularly update your profile with posts and offers.",
     },
   ];
 
@@ -227,7 +228,7 @@ const page = () => {
               ref={mainHeading}
               className="text-white text-center text-8xl max-sm:text-4xl font-bold z-10"
             >
-              Local Search Optimization
+              Local Search <br /> Optimization
             </h1>
           </div>
         </div>
@@ -235,7 +236,7 @@ const page = () => {
         {/* --------------------------------  { Section 2 }  ------------------------------------------ */}
 
         <section className="w-full text-white body-font">
-          <div className="container mx-auto flex gap-10 max-sm:gap-10 px-5 max-sm:px-2  py-24 md:flex-row flex-col items-center">
+          <div className="container mx-auto flex gap-10 max-sm:gap-10 px-5 max-sm:px-2  py-24 max-sm:py-10 md:flex-row flex-col items-center">
             <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
               <video
                 src="https://cdn.prod.website-files.com/660b9ff56cc1437adb553c40%2F66a3956e49d8a96e28ec7e12_111-transcode.mp4"
@@ -248,23 +249,15 @@ const page = () => {
             </div>
             <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center max-sm:text-left max-sm:px-8">
               <h1 className="max-sm:text-2xl text-3xl mb-4 font-bold text-white">
-                Get to the Top Page of Search Engines
-                {/* <br className="hidden lg:inline-block" /> */}
-                With Targeted Revenue Growth
+                Local Search Optimization: Enhancing Visibility with Proven Results
               </h1>
               <p className="mb-8 leading-relaxed">
-                In the fast-paced digital marketplace, visibility is everything.
-                Corecentrix Business Solutions stands at the forefront of SEO
-                excellence, empowering businesses across the USA to dominate
-                search engine rankings and achieve unparalleled revenue growth.
-                Our expert SEO strategies are not just about climbing to the top
-                page—they're about driving measurable results that translate
-                into tangible profits for your business.
+                Businesses that utilize our Local Search Optimization services experience an average 45% increase in local search visibility within the first three months. Our clients see a 30% boost in click-through rates from local search results, driving more qualified traffic to their websites. Our comprehensive approach includes optimizing Google Business Profiles, managing local citations, and employing targeted keywords to ensure your business captures attention from potential customers in your area.
               </p>
-              <div className="flex justify-center">
-                <button className="inline-flex text-white border border-white px-6 py-3 rounded-lg text-lg hover:bg-white hover:text-black transition-colors duration-300">
+              <div className="flex justify-center ">
+                <Link href={`/Contact`}>  <button className="inline-flex text-white border border-white px-6 py-3 rounded-lg text-lg hover:bg-white hover:text-black transition-colors duration-300">
                   Connect Now
-                </button>
+                </button></Link>
               </div>
             </div>
           </div>
@@ -273,22 +266,19 @@ const page = () => {
         {/* --------------------------------  { Section 3 }  ------------------------------------------ */}
 
         <section className="w-full text-white body-font">
-          <div className="container mx-auto flex  max-sm:flex-col-reverse gap-10 max-sm:gap-10  px-5 max-sm:px-2 py-15 md:flex-row flex-col items-center">
+          <div className="container mx-auto flex  max-sm:flex-col-reverse gap-10 max-sm:gap-10  px-5 max-sm:px-2 py-15 max-sm:py-10   md:flex-row flex-col items-center">
             <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center max-sm:text-left max-sm:px-8">
               <h1 className=" max-sm:text-2xl text-3xl mb-4 font-bold text-white">
-                Your Business Statistics Turn
-                {/* <br className="hidden lg:inline-block" /> */}
-                Your Decisions to Profit
+                Be the top choice in your area
               </h1>
               <p className="mb-8 leading-relaxed">
-                Harness the power of data to drive your business forward. At Corecentrix Business Solutions, we transform your business statistics into actionable insights that fuel profitable decisions. By leveraging advanced analytics, we uncover trends, identify opportunities, and provide a clear roadmap to success.
-
-                Whether it’s optimizing your marketing strategies, enhancing customer engagement, or streamlining operations, our data-driven approach ensures that every decision you make is backed by solid evidence and poised to maximize profitability. Let your business statistics be the catalyst for growth, turning informed decisions into substantial profits.
+                At Corecentrix Business Solutions, we specialize in making your business the go-to option in your local area. With our Local Search Optimization services, we utilize proven strategies and data-driven methods to boost your visibility and credibility. Our goal is to ensure that when customers search for services like yours, your business is their top choice. Our expert team leverages years of experience and cutting-edge tools to craft a personalized strategy that aligns with your business goals, ensuring you dominate local search results and drive more targeted traffic to your website.
               </p>
               <div className="flex justify-center">
-                <button className="inline-flex text-white border border-white px-6 py-3 rounded-lg text-lg hover:bg-white hover:text-black transition-colors duration-300">
+                <Link href={`/Contact`}>  <button className="inline-flex text-white border border-white px-6 py-3 rounded-lg text-lg hover:bg-white hover:text-black transition-colors duration-300">
                   Learn More
                 </button>
+                </Link>
               </div>
             </div>
             <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
@@ -341,18 +331,19 @@ const page = () => {
             </div>
             <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left mb-16 max-sm:mb-2 md:mb-0 items-center text-center max-sm:text-left max-sm:px-8 ">
               <h1 className="max-sm:text-2xl text-3xl mb-4 font-bold text-white">
-                Our SEO Services Features & Packages
+                Comprehensive Local Search Strategies for Enterprise-Level Success
 
               </h1>
               <div>
                 <p className="mb-1 leading-relaxed">
-                  At Corecentrix Business Solutions, we provide a full suite of SEO services designed to improve your online visibility, drive targeted traffic, and boost your business’s bottom line. Our offerings are tailored to meet the unique needs of each business, whether you’re a small local business or a large enterprise. Here’s a detailed list of the SEO services we provide:
+                  Achieving top visibility in local markets is crucial for enterprises looking to dominate their industry. At Corecentrix Business Solutions, we offer tailored local search strategies designed specifically for enterprise-level businesses. Our approach combines advanced SEO techniques with localized content, citation management, and reputation enhancement to ensure your brand stands out in every market you serve.
                 </p>
 
               </div>
-              <button className="inline-flex text-white border border-white px-6 py-3 rounded-lg text-lg hover:bg-white hover:text-black transition-colors duration-300 mt-2">
+              <Link href={`/Contact`}><button className="inline-flex text-white border border-white px-6 py-3 rounded-lg text-lg hover:bg-white hover:text-black transition-colors duration-300 mt-2">
                 Book a Demo
               </button>
+              </Link>
             </div>
           </div>
         </section>
@@ -407,7 +398,7 @@ const page = () => {
         </section>
 
         <section className="w-full h-screen  px-4 py-4 text-white">
-          <h1 className="text-white font-bold text-center text-4xl mt-8 ">FAQs: Your Questions Answered</h1>
+          <h1 className="text-white font-bold text-center text-4xl max-sm:text-3xl mt-8 ">FAQs: Your Questions Answered</h1>
           <div className="container mx-auto flex gap-10 max-sm:gap-10 px-5 max-sm:px-2  py-24 md:flex-row flex-col items-center">
             <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
 

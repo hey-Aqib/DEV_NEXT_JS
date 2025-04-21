@@ -64,11 +64,10 @@ Your Vision - Our Mission
 </h1>
       
 
-      <div className="flex flex-col md:flex-row items-center justify-center gap-10  px-4 py-12 md:py-24">
+      <div className="flex flex-col md:gap-[30%] md:flex-row items-center justify-center gap-10  px-4 py-12 md:py-24">
         <div className="text-5xl md:text-7xl lg:text-8xl font-medium text-white text-center md:text-left">
         Mutual
         </div>
-        <img src="/dev/images/logofront.svg" className='circle w-50' alt="" />
         <div className="text-5xl md:text-7xl lg:text-8xl font-medium text-white text-center md:text-right">
         Growth
         </div>

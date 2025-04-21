@@ -6,25 +6,7 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 const Section3 = () => {
   const imgRef = useRef(null);
 
-  useEffect(() => {
-    gsap.set(".solutions", {
-      transformOrigin: "50% 50%",
-      scale: 0.5,
-      filter: "drop-shadow(0 0 0px white)",
-    });
-  
-    gsap.to(".solutions", {
-      rotation: 2060,
-      scale: 1.2,
-      filter: "drop-shadow(0 0 20px white)",
-      duration: 2,
-      ease: "power2.inOut",
-      yoyo: true,
-      repeat: -1,
-    });
-
-    
-  }, []);
+ 
 
   const serviceSections = [
     {

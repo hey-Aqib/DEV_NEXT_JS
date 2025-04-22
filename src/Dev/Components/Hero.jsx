@@ -59,9 +59,9 @@ const Hero = () => {
         </Canvas>
       </div> */}
 
-<h1 className="text-center max-sm:text-2xl max-sm:mt-5 text-3xl font-extrabold">
+{/* <div className="text-center max-sm:text-2xl max-sm:mt-5 text-3xl font-extrabold">
 Your Vision - Our Mission
-</h1>
+</div> */}
       
 
       <div className="flex flex-col md:gap-[30%] md:flex-row items-center justify-center gap-10  px-4 py-12 md:py-24">

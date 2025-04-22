@@ -189,8 +189,7 @@ const Navbar = () => {
                 >
                   <X size={25} />
                 </button>
-                <NavbarContent ulRef={ulRef} responsiveHeight={responsiveHeight}
-                
+                <NavbarContent ulRef={ulRef} 
                  />
               </div>
             </div>

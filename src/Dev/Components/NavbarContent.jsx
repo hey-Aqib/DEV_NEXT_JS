@@ -63,38 +63,41 @@ const NavbarContent = ({ ulRef }) => {
             )}
           </div>
           <div className="absolute inset-0">
-  {children.split("").map((l, i) =>
-    l === " " ? (
-      <span key={i} className="inline-block">
-        &nbsp;
-      </span>
-    ) : (
-      <motion.span
-        variants={{
-          initial: { y: "100%" },
-          hovered: { y: 0 },
-        }}
-        transition={{
-          duration: DURATION,
-          ease: "easeInOut",
-          delay: STAGGER * i,
-        }}
-        className="inline-block"
-        key={i}
-      >
-        {l}
-      </motion.span>
-    )
-  )}
-</div>
-
+            {children.split("").map((l, i) =>
+              l === " " ? (
+                <span key={i} className="inline-block">
+                  &nbsp;
+                </span>
+              ) : (
+                <motion.span
+                  variants={{
+                    initial: { y: "100%" },
+                    hovered: { y: 0 },
+                  }}
+                  transition={{
+                    duration: DURATION,
+                    ease: "easeInOut",
+                    delay: STAGGER * i,
+                  }}
+                  className="inline-block"
+                  key={i}
+                >
+                  {l}
+                </motion.span>
+              )
+            )}
+          </div>
         </motion.div>
       </Link>
     );
   };
 
   return (
-    <ul ref={ulRef} className="z-50 uppercase space-y-2 mt-12 grid gap-2 w-full">
+    <ul
+      ref={ulRef}
+      className="z-50 uppercase space-y-2 mt-12 grid gap-2 w-full overflow-y-auto overflow-x-hidden"
+      style={{ maxHeight: "calc(90vh - 100px)" }}
+    >
       <li>
         <button
           onClick={() => toggleSection("seo")}
@@ -174,7 +177,9 @@ const NavbarContent = ({ ulRef }) => {
               </FlipLink>
             </li>
             <li>
-              <FlipLink to="/e-commerce-website-development">E-Commerce Solution</FlipLink>
+              <FlipLink to="/e-commerce-website-development">
+                E-Commerce Solution
+              </FlipLink>
             </li>
             <li>
               <FlipLink to="/logo">Logo Development</FlipLink>
@@ -197,14 +202,20 @@ const NavbarContent = ({ ulRef }) => {
           </ul>
         )}
         <li className="pt-6">
-              <FlipLink to="/Who-We-Are">Who-We-Are</FlipLink>
-            </li>
-            <li className="py-6">
-              <FlipLink to="/How-It-Works">How-It-Works</FlipLink>
-            </li>
-            <li className="md:hidden">
-              <FlipLink to="/contact">Contact</FlipLink>
-            </li>
+          <FlipLink to="/Who-We-Are">Who-We-Are</FlipLink>
+        </li>
+        <li className="py-6">
+          <FlipLink to="/How-It-Works">How-It-Works</FlipLink>
+        </li>
+        <li className="md:hidden">
+          <FlipLink to="/contact">Contact</FlipLink>
+        </li>
+        <li className="py-6">
+          <FlipLink to="/How-It-Works">How-It-Works</FlipLink>
+        </li>
+        <li className="md:hidden">
+          <FlipLink to="/contact">Contact</FlipLink>
+        </li>
       </li>
     </ul>
   );

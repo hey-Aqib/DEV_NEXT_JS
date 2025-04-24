@@ -122,45 +122,41 @@ const Navbar = () => {
   return (
     <div>
       <div className="relative -mb-15 bg-black w-full flex justify-between items-center px-5 py-4 sm:px-12 sm:py-8 md:px-12 md:py-8 lg:px-12 lg:py-8 xl:px-12 xl:py-8 2xl:px-12 2xl:py-8 text-white z-100">
-      <div className="flex items-center">
-  <Link href={`/`} className=" w-70 max-sm:w-50 h-5">
-    <img
-      src="/dev/images/logo.svg"
-      alt="Logo"
-      className="w-full"
-    />
-  </Link>
-</div>
+        <div className="flex items-center">
+          <Link href={`/`} className=" w-70 max-sm:w-50 h-5">
+            <img src="/dev/images/logo.svg" alt="Logo" className="w-full" />
+          </Link>
+        </div>
 
         <div className="flex items-center gap-10">
           <Link href="/contact">
-          <div className="relative inline-block group max-sm:hidden">
-            <button className="relative z-20 text-white px-8 py-4 max-sm:px-6 max-sm:py-3 uppercase tracking-wider rounded-md text-sm overflow-hidden cursor-pointer">
-              <span className="relative z-20 -10">Book a Demo</span>
+            <div className="relative inline-block group max-sm:hidden">
+              <button className="relative z-20 text-white px-8 py-4 max-sm:px-6 max-sm:py-3 uppercase tracking-wider rounded-md text-sm overflow-hidden cursor-pointer">
+                <span className="relative z-20 -10">Book a Demo</span>
 
-              <span className="absolute inset-0 bg-gradient-to-t from-[#181717]/60 to-[#505051]/60 transition-all duration-700 ease-in-out group-hover:from-[#505051]/60 group-hover:to-[#181717]/60 z-0" />
-            </button>
-            <img
-              src="/dev/images/left top.svg"
-              alt=""
-              className="absolute top-0 left-0 -translate-x-1/3 -translate-y-1/3 z-21 transition-transform duration-300 group-hover:translate-x-1 group-hover:translate-y-1"
-            />
-            <img
-              src="/dev/images/right top.svg"
-              alt=""
-              className="absolute top-0 right-0 translate-x-1/3 -translate-y-1/3 z-21 transition-transform duration-300 group-hover:-translate-x-1 group-hover:translate-y-1"
-            />
-            <img
-              src="/dev/images/left bottom.svg"
-              alt=""
-              className="absolute bottom-0 left-0 -translate-x-1/3 translate-y-1/3 z-21 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
-            />
-            <img
-              src="/dev/images/right bottom.svg"
-              alt=""
-              className="absolute bottom-0 right-0 translate-x-1/3 translate-y-1/3 z-21 transition-transform duration-300 group-hover:-translate-x-1 group-hover:-translate-y-1"
-            />
-          </div>
+                <span className="absolute inset-0 bg-gradient-to-t from-[#181717]/60 to-[#505051]/60 transition-all duration-700 ease-in-out group-hover:from-[#505051]/60 group-hover:to-[#181717]/60 z-0" />
+              </button>
+              <img
+                src="/dev/images/left top.svg"
+                alt=""
+                className="absolute top-0 left-0 -translate-x-1/3 -translate-y-1/3 z-21 transition-transform duration-300 group-hover:translate-x-1 group-hover:translate-y-1"
+              />
+              <img
+                src="/dev/images/right top.svg"
+                alt=""
+                className="absolute top-0 right-0 translate-x-1/3 -translate-y-1/3 z-21 transition-transform duration-300 group-hover:-translate-x-1 group-hover:translate-y-1"
+              />
+              <img
+                src="/dev/images/left bottom.svg"
+                alt=""
+                className="absolute bottom-0 left-0 -translate-x-1/3 translate-y-1/3 z-21 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
+              />
+              <img
+                src="/dev/images/right bottom.svg"
+                alt=""
+                className="absolute bottom-0 right-0 translate-x-1/3 translate-y-1/3 z-21 transition-transform duration-300 group-hover:-translate-x-1 group-hover:-translate-y-1"
+              />
+            </div>
           </Link>
 
           <button
@@ -177,20 +173,15 @@ const Navbar = () => {
           ></div>
 
           {isVisible && (
-            <div className="fixed top-0 right-0 w-full h-full flex justify-end items-start z-200 p-10 text-white pointer-events-auto "
-            
-            >
-              <div className="relative w-[100%] sm:w-[28%] md:w-[30%] 2xl:w-[28%] z-100 "
-              
-              >
+            <div className="fixed top-0 right-0 w-full h-full flex justify-end items-start z-200 p-10 text-white pointer-events-auto ">
+              <div className="relative w-[100%] sm:w-[28%] md:w-[30%] 2xl:w-[28%] z-100 ">
                 <button
                   className="ml-[86.7%] -mt-[8.5%] max-sm:-mt-[8%] max-sm:-mr-[6%] md:-mt-4 md:mr-2 lg:-mt-2 lg:mr-2 xl:-mt-2 xl:mr-2 2xl:-mt-2 2xl:mr-2 float-end px-4 py-4 text-md font-bold text-white bg-[#111111] border-none cursor-pointer outline-none rounded-full close"
                   onClick={closeMenu}
                 >
                   <X size={25} />
                 </button>
-                <NavbarContent ulRef={ulRef} 
-                 />
+                <NavbarContent ulRef={ulRef} />
               </div>
             </div>
           )}

@@ -6,12 +6,10 @@ const ScrollSpySection = () => {
   const contentRefs = useRef([]);
   const containerRef = useRef(null);
 
-  // Initialize refs array
   useEffect(() => {
-    contentRefs.current = contentRefs.current.slice(0, 4); // Adjust based on your actual number of sections
+    contentRefs.current = contentRefs.current.slice(0, 4); 
   }, []);
 
-  // Handle scroll to update active section
   useEffect(() => {
     const container = containerRef.current;
     

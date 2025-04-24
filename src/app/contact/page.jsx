@@ -5,10 +5,10 @@ import React, { useEffect, useState } from "react";
 import { CircleAlert } from "lucide-react";
 const Page = () => {
   return (
-    <div className="w-full h-full bg-black ">
-      <div className="w-full h-full pt-10">
+    <div className="w-full h-full bg-[#191919] ">
+      <div className="w-full h-full pt-30">
         <Marquee />
-        <div className="text-white w-full h-full pb-[2%] overflow-hidden bg-black pt-5">
+        <div className="text-white w-full h-full pb-[2%] overflow-hidden bg-[#181818] pt-15">
           {/* <h1 className="text-center p-8 pb-0 mt-16 mb-[2%] text-4xl sm:text-5xl 2xl:text-9xl md:text-6xl lg:text-7xl font-bold ">
           Lets's Talk
         </h1> */}

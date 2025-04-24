@@ -74,7 +74,7 @@ const page = () => {
       <IntegritySection />
       <MeetPandasCSR />
 
-      <div className="w-full h-screen flex flex-col justify-between gap-4 items-center bg-[#E8E0CD] py-12">
+      <div className="w-full h-screen max-sm:h-full flex flex-col justify-between gap-4 items-center bg-[#E8E0CD] py-12">
         <h1 className="text-5xl font-bold  text-black  mb-12 text-center">
         Meet our team
         </h1>

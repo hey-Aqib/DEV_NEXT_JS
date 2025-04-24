@@ -63,27 +63,6 @@ const page = () => {
       duration: 0.8,
       ease: "power3.out",
     })
-      .from(
-        textRef.current,
-        {
-          y: 30,
-          opacity: 0,
-          duration: 0.8,
-          ease: "power3.out",
-        },
-        "-=0.4"
-      )
-      .from(
-        ctaRef.current,
-        {
-          y: 20,
-          opacity: 0,
-          duration: 0.8,
-          ease: "power3.out",
-        },
-        "-=0.4"
-      );
-
     // Cleanup function
     return () => {
       if (tl.scrollTrigger) {
@@ -95,50 +74,62 @@ const page = () => {
 
   const SEOTpyes = [
     {
-      title: "Comprehensive Local SEO Audits",
-      dis: "Our process begins with an in -depth local SEO audit, analyzing your current online presence, competitor landscape, and potential growth areas.This audit identifies gaps and opportunities, providing a roadmap to enhance your search visibility.We use advanced tools to assess factors like keyword rankings, citation accuracy, and Google Business Profile optimization.On average, businesses that undergo our comprehensive audit see a 35% increase in local search traffic within the first 60 days.",
+      title: "Keyword Research & Strategy",
+      dis: "Corecentrix Business Solutions is an SEO firm that understands your industry and can help you rank higher for certain search phrases. Your SEO professional will examine the keywords for which your website is already ranking.",
     },
     {
-      title: "Optimizing Google Business Profile",
-      dis: "A well-optimized Google Business Profile is crucial for local SEO success. We enhance your profile with accurate information, engaging descriptions, high-quality images, and targeted keywords. Our experts ensure your profile is regularly updated with fresh content and customer reviews, significantly boosting your local search rankings. Statistics show that businesses with optimized Google Business Profiles enjoy a 70% increase in click-through rates from local searches.",
+      title: "Link Building",
+      dis: "Backlinks are an important part in achieving higher rankings in search results, but not just any link! That is why you should work with an SEO firm like Thrive, which has a specialised link building team and contacts with a large number of high-quality and relevant websites",
     },
     {
-      title: "Building and Managing Local Citations",
-      dis: "Accurate and consistent local citations across directories and review sites are essential for building trust with search engines and customers. We ensure your business information is uniform across all major platforms, reducing the risk of errors and improving your local SEO. This consistency can lead to a 20% improvement in local search rankings, helping your business appear more frequently in search results.",
+      title: "Technical SEO",
+      dis: "Rankings can be improved by making back-end changes to your website, such as increasing page speed. By correcting these issues, you make it easier for search engines to index your page. And when you please search engines, your rankings may please you much more",
     },
     {
-      title: "Targeted Local Content Strategy",
-      dis: "Creating content that resonates with your local audience is key to establishing authority in your area. We develop a targeted content strategy that includes blog posts, local guides, and community-focused articles, all optimized for local keywords. This approach not only increases your website’s relevance but also drives engagement from local users. Clients utilizing our local content strategy see a 40% boost in local search traffic and a 25% increase in user engagement.",
+      title: "Local SEO",
+      dis: "Improve your company’s local SEO ranks by optimising your Google Business Profile or Google My Business (GMB) and attracting high-intent consumers. To increase your local following, we improve your GMB profile and maintain your online reputation.",
     },
     {
-      title: "Leveraging Customer Reviews and Reputation Management",
-      dis: "Positive customer reviews are a powerful factor in local search rankings and customer decision-making. We help you implement effective strategies to encourage satisfied customers to leave positive reviews, while also managing and responding to feedback. Businesses that actively manage their online reputation with our services typically experience a 50% improvement in local search visibility and a higher conversion rate due to increased customer trus",
+      title: "On-Page SEO",
+      dis: "Boost your internet presence and generate high-quality visitors. Thrive ensures that our SEO services are in line with search engines’ best practises in order to increase the reliability of your website.",
     },
     {
-      title: "Advanced Data Analytics and Continuous Optimization",
-      dis: "Our work doesn’t stop once the initial optimizations are in place. We continuously monitor your local search performance using advanced data analytics tools to track key metrics such as search rankings, click-through rates, and customer engagement. This ongoing analysis allows us to make data-driven adjustments to your strategy, ensuring sustained growth. Our clients benefit from a continuous improvement approach, achieving a 30% year-over-year increase in local search traffic and conversions.",
+      title: "Off-Page SEO",
+      dis: "Off-page SEO is critical for building brand reputation and enhancing internet visibility. Partner with our SEO firm and let us assist you in demonstrating your industry experience.",
+    },
+    {
+      title: "Amazon SEO",
+      dis: "Differentiate your brand on Amazon and you’ll be discovered by millions of buyers who are eager to buy.",
+    },
+    {
+      title: "Conversion Rate Optimization (CRO)",
+      dis: "Corecentrix’s CRO services can help you increase the lifetime value of your clients and enhance your online income.",
+    },
+    {
+      title: "E-commerce SEO",
+      dis: "Increase your client retention rate by providing a convenient shopping experience to your consumers 24 hours a day, seven days a week",
     },
   ];
 
   const FAQS = [
     {
-      title: "What is Local Search Optimization?",
-      dis: "Local Search Optimization is the process of enhancing your online presence to improve visibility in local search results. It involves optimizing your website, Google Business Profile, and other online listings to attract customers in your geographic area.",
+      title: "What is landing page optimization?",
+      dis: "Landing page optimization involves designing and improving a landing page to increase its effectiveness in converting visitors into leads or customers. This includes enhancing elements such as content, layout, call-to-action buttons, and SEO strategies to improve user experience and drive better results.",
     },
     {
-      title: "Why is Local Search Optimization important for my business?",
-      dis: "Local Search Optimization helps your business appear in search results when potential customers look for products or services in your area. It drives targeted traffic, increases foot traffic, and enhances brand visibility within your local market.",
+      title: "Why is landing page optimization important for my business?",
+      dis: "Optimizing your landing pages helps ensure that they are aligned with your business goals and target audience. It can significantly increase conversion rates, improve search engine rankings, and drive more qualified traffic to your site, leading to better overall business performance.",
     },
 
     {
-      title: "How does Local Search Optimization differ from regular SEO?",
-      dis: "While regular SEO focuses on improving your website’s visibility across a broad range of searches, Local Search Optimization specifically targets local searches and aims to increase your business’s presence in a particular geographic area.",
+      title: "How does landing page optimization affect SEO?",
+      dis: "Proper optimization of landing pages includes implementing SEO best practices such as keyword-rich content, meta tags, and proper HTML structure. This helps improve your landing page’s visibility in search engine results, leading to higher rankings and increased organic traffic.",
     },
 
 
     {
-      title: "How do I optimize my Google Business Profile?",
-      dis: "To optimize your Google Business Profile, ensure that your business information is accurate and up-to-date, include relevant keywords in your business description, add high-quality photos, encourage and respond to customer reviews, and regularly update your profile with posts and offers.",
+      title: "How long does it take to see results from landing page optimization?",
+      dis: "The timeframe for seeing results can vary depending on several factors, including the competitiveness of your industry, the effectiveness of the optimization strategies, and the existing performance of your landing page. Generally, you can start seeing improvements in traffic and conversion rates within a few weeks to a few months.",
     },
   ];
 
@@ -228,7 +219,7 @@ const page = () => {
               ref={mainHeading}
               className="text-white text-center text-8xl max-sm:text-4xl font-bold z-10"
             >
-              Local Search <br /> Optimization
+               Local Order <br/> Management
             </h1>
           </div>
         </div>
@@ -249,10 +240,10 @@ const page = () => {
             </div>
             <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center max-sm:text-left max-sm:px-8">
               <h1 className="max-sm:text-2xl text-3xl mb-4 font-bold text-white">
-                Local Search Optimization: Enhancing Visibility with Proven Results
+              Is your business ranking on the first page of Google?
               </h1>
               <p className="mb-8 leading-relaxed">
-                Businesses that utilize our Local Search Optimization services experience an average 45% increase in local search visibility within the first three months. Our clients see a 30% boost in click-through rates from local search results, driving more qualified traffic to their websites. Our comprehensive approach includes optimizing Google Business Profiles, managing local citations, and employing targeted keywords to ensure your business captures attention from potential customers in your area.
+              Even if it is, are you confident that it will stay there for long? Imagine having a business with an amazing business model ready to bring the competition a challenge but your business has no we of getting there without good rankings. Our SEO Specialists are aware of the fluctuating policies caused in the digital market, that is Search Engine Optimization. With growing competition all around you it is not a luxury but a necessity to have your business rank on top of google.
               </p>
               <div className="flex justify-center ">
                 <Link href={`/Contact`}>  <button className="inline-flex text-white border border-white px-6 py-3 rounded-lg text-lg hover:bg-white hover:text-black transition-colors duration-300">
@@ -266,13 +257,14 @@ const page = () => {
         {/* --------------------------------  { Section 3 }  ------------------------------------------ */}
 
         <section className="w-full text-white body-font">
-          <div className="container mx-auto flex  max-sm:flex-col-reverse gap-10 max-sm:gap-10  px-5 max-sm:px-2 py-15 sm:py-5   md:flex-row flex-col items-center">
+          <div className="container mx-auto flex  max-sm:flex-col-reverse gap-10 max-sm:gap-10  px-5 max-sm:px-2 py-15 max-sm:py-10   md:flex-row flex-col items-center">
             <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center max-sm:text-left max-sm:px-8">
               <h1 className=" max-sm:text-2xl text-3xl mb-4 font-bold text-white">
-                Be the top choice in your area
+              Get Free SEO Audit Report now!
               </h1>
               <p className="mb-8 leading-relaxed">
-                At Corecentrix Business Solutions, we specialize in making your business the go-to option in your local area. With our Local Search Optimization services, we utilize proven strategies and data-driven methods to boost your visibility and credibility. Our goal is to ensure that when customers search for services like yours, your business is their top choice. Our expert team leverages years of experience and cutting-edge tools to craft a personalized strategy that aligns with your business goals, ensuring you dominate local search results and drive more targeted traffic to your website.
+              Is your site well-optimized? Get an Audit.
+              Allow us to tell you what your competitors are doing to stay on top of search and how you can outrank them with a concise yet effective plan.
               </p>
               <div className="flex justify-center">
                 <Link href={`/Contact`}>  <button className="inline-flex text-white border border-white px-6 py-3 rounded-lg text-lg hover:bg-white hover:text-black transition-colors duration-300">
@@ -331,12 +323,12 @@ const page = () => {
             </div>
             <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left mb-16 max-sm:mb-2 md:mb-0 items-center text-center max-sm:text-left max-sm:px-8 ">
               <h1 className="max-sm:text-2xl text-3xl mb-4 font-bold text-white">
-                Comprehensive Local Search Strategies for Enterprise-Level Success
+              When to get SEO?
 
               </h1>
               <div>
                 <p className="mb-1 leading-relaxed">
-                  Achieving top visibility in local markets is crucial for enterprises looking to dominate their industry. At Corecentrix Business Solutions, we offer tailored local search strategies designed specifically for enterprise-level businesses. Our approach combines advanced SEO techniques with localized content, citation management, and reputation enhancement to ensure your brand stands out in every market you serve.
+                If any of these are the reason that sound familiar then you have come to the right company because when it comes to Search Engine Optimization (SEO), we are the masters of Google’s ever-changing algorithm. Our SEO Specialists are aware of the fluctuating policies caused in the digital market, that is Search Engine Optimization. With growing competition all around you it is not a luxury but a necessity to have your business rank on top of google.
                 </p>
 
               </div>

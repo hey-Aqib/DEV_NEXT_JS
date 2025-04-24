@@ -55,13 +55,13 @@ const page = () => {
           </div>
         </div>
       </section>
-      <section className="w-full h-[20vh] flex justify-center items-center">
-        <h1 className="text-white text-5xl">
+      <section className="w-full h-[20vh] max-sm:h-[10vh] flex justify-center items-center">
+        <h1 className="text-white text-5xl max-sm:text-3xl text-center">
           {" "}
           Unmatch Technical <span className="font-bold">Experties</span>
         </h1>
       </section>
-
+    {/* Litel chaning */}
       <section className="w-full text-white body-font">
         <div className="container mx-auto flex  max-sm:flex-col-reverse gap-10 max-sm:gap-10  px-5 max-sm:px-2 py-15 md:flex-row flex-col items-center">
           <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center max-sm:text-left max-sm:px-8">
@@ -107,108 +107,7 @@ const page = () => {
         </div>
       </section>
 
-      {/* <section className="w-full h-full">
-        <div className="w-full h-full flex max-sm:flex-col gap-2 px-10 py-8">
-          <div className="w-[20%]  max-sm:w-full  ">
-            <div className="sticky top-2 space-y-2 ">
-            <div className="w-full rounded-2xl p-7 flex flex-col gap-4 bg-[#510ADD] border border-white/30">
-              <h1 className="text-white font-lg">01</h1>
-              <h3 className="text-white font-medium text-xl">Challenge</h3>
-            </div>
-            <div className="w-full rounded-2xl p-7 flex flex-col gap-4  border border-white/30">
-              <h1 className="text-white font-lg">01</h1>
-              <h3 className="text-white font-medium text-xl">Challenge</h3>
-            </div>
-            <div className="w-full rounded-2xl p-7 flex flex-col gap-4  border border-white/30">
-              <h1 className="text-white font-lg">01</h1>
-              <h3 className="text-white font-medium text-xl">Challenge</h3>
-            </div>
-            <div className="w-full rounded-2xl p-7 flex flex-col gap-4  border border-white/30">
-              <h1 className="text-white font-lg">01</h1>
-              <h3 className="text-white font-medium text-xl">Challenge</h3>
-            </div>
-            </div>
-          </div>
-          <div className="w-[80%] max-sm:w-full space-y-2">
-            <div className="w-full  p-12 bg-[#510ADD] space-y-2 rounded-2xl">
-              <div className="w-full flex justify-between items-center py-4 border-b border-white">
-                    <h1 className="text-white text-3xl">Challenge</h1>
-                    <h3 className="text-white text-3xl">01</h3>
-              </div>
-              <div className="w-full flex justify-between items-center py-4">
-                    <p className="text-white font-medium text-lg">The client, a leading provider of cloud-based solutions for government agencies, experienced a rise in complex technical support tickets that their internal team struggled to resolve within agreed-upon Service Level Agreements (SLAs). This led to frustrated customers and declining Customer Satisfaction Scores (CSAT). The client has a history of maintaining exceptional SLA and impeccable CSAT. They needed to partner with a BPO that could match their standards.</p>
-              </div>
-              <div className=" w-full">
-              <video
-                src="https://cdn.prod.website-files.com/660b9ff56cc1437adb553c40%2F66a3b5eee61f4c0be515133e_1-9-1_1-transcode.mp4"
-                className="object-cover object-center rounded w-full h-full"
-                muted
-                autoPlay
-                loop
-                playsInline
-              />
-            </div>
-            </div>
-            <div className="w-full  p-12 bg-[#510ADD] space-y-2 rounded-2xl">
-              <div className="w-full flex justify-between items-center py-4 border-b border-white">
-                    <h1 className="text-white text-3xl">Challenge</h1>
-                    <h3 className="text-white text-3xl">01</h3>
-              </div>
-              <div className="w-full flex justify-between items-center py-4">
-                    <p className="text-white font-medium text-lg">The client, a leading provider of cloud-based solutions for government agencies, experienced a rise in complex technical support tickets that their internal team struggled to resolve within agreed-upon Service Level Agreements (SLAs). This led to frustrated customers and declining Customer Satisfaction Scores (CSAT). The client has a history of maintaining exceptional SLA and impeccable CSAT. They needed to partner with a BPO that could match their standards.</p>
-              </div>
-              <div className=" w-full">
-              <video
-                src="https://cdn.prod.website-files.com/660b9ff56cc1437adb553c40%2F66a3b5eee61f4c0be515133e_1-9-1_1-transcode.mp4"
-                className="object-cover object-center rounded w-full h-full"
-                muted
-                autoPlay
-                loop
-                playsInline
-              />
-            </div>
-            </div>
-            <div className="w-full  p-12 bg-[#510ADD] space-y-2 rounded-2xl">
-              <div className="w-full flex justify-between items-center py-4 border-b border-white">
-                    <h1 className="text-white text-3xl">Challenge</h1>
-                    <h3 className="text-white text-3xl">01</h3>
-              </div>
-              <div className="w-full flex justify-between items-center py-4">
-                    <p className="text-white font-medium text-lg">The client, a leading provider of cloud-based solutions for government agencies, experienced a rise in complex technical support tickets that their internal team struggled to resolve within agreed-upon Service Level Agreements (SLAs). This led to frustrated customers and declining Customer Satisfaction Scores (CSAT). The client has a history of maintaining exceptional SLA and impeccable CSAT. They needed to partner with a BPO that could match their standards.</p>
-              </div>
-              <div className=" w-full">
-              <video
-                src="https://cdn.prod.website-files.com/660b9ff56cc1437adb553c40%2F66a3b5eee61f4c0be515133e_1-9-1_1-transcode.mp4"
-                className="object-cover object-center rounded w-full h-full"
-                muted
-                autoPlay
-                loop
-                playsInline
-              />
-            </div>
-            </div>
-            <div className="w-full  p-12 bg-[#510ADD] space-y-2 rounded-2xl">
-              <div className="w-full flex justify-between items-center py-4 border-b border-white">
-                    <h1 className="text-white text-3xl">Challenge</h1>
-                    <h3 className="text-white text-3xl">01</h3>
-              </div>
-              <div className="w-full flex justify-between items-center py-4">
-                    <p className="text-white font-medium text-lg">The client, a leading provider of cloud-based solutions for government agencies, experienced a rise in complex technical support tickets that their internal team struggled to resolve within agreed-upon Service Level Agreements (SLAs). This led to frustrated customers and declining Customer Satisfaction Scores (CSAT). The client has a history of maintaining exceptional SLA and impeccable CSAT. They needed to partner with a BPO that could match their standards.</p>
-              </div>
-              <div className=" w-full">
-              <video
-                src="https://cdn.prod.website-files.com/660b9ff56cc1437adb553c40%2F66a3b5eee61f4c0be515133e_1-9-1_1-transcode.mp4"
-                className="object-cover object-center rounded w-full h-full"
-                muted
-                autoPlay
-                loop
-                playsInline
-              />
-            </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
+      
       <ScrollSpySection/>
     </div>
   );

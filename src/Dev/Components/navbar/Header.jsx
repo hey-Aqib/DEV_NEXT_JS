@@ -542,7 +542,7 @@ const Header = () => {
 
   return (
     <div>
-      <div className="w-full top-0 left-0 absolute flex justify-between items-center px-4 py-4 sm:px-8 sm:py-6 md:px-12 md:py-8  text-white z-50">
+      <div className="w-full top-0 left-0 absolute flex justify-between items-center px-4 py-4 sm:px-8 sm:py-6 md:px-12 md:py-10  text-white z-50">
         <div className="flex items-center gap-4 max-sm:w-full max-sm:justify-between">
           <div className="flex items-center">
             <Link href={`/`} className=" w-40 max-sm:w-50 h-5">

@@ -5,41 +5,61 @@ const ScrollSpySection = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const contentRefs = useRef([]);
   const containerRef = useRef(null);
+  const isScrollingRef = useRef(false);
 
   useEffect(() => {
-    contentRefs.current = contentRefs.current.slice(0, 4); 
+    contentRefs.current = contentRefs.current.slice(0, 4);
   }, []);
 
   useEffect(() => {
-    const container = containerRef.current;
-    
     const handleScroll = () => {
-      const containerTop = container.getBoundingClientRect().top;
-      
-      contentRefs.current.forEach((ref, index) => {
-        if (!ref) return;
-        
-        const refTop = ref.getBoundingClientRect().top;
-        const refHeight = ref.getBoundingClientRect().height;
-        
-        // Check if section is in view (with some threshold)
-        if (refTop - containerTop <= 100 && refTop - containerTop + refHeight > 100) {
-          setActiveIndex(index);
+      if (isScrollingRef.current) return;
+  
+      const sections = contentRefs.current;
+      const scrollY = window.scrollY;
+      const viewportHeight = window.innerHeight;
+  
+      let closestIndex = 0;
+      let minDistance = Infinity;
+  
+      sections.forEach((section, index) => {
+        if (!section) return;
+  
+        const rect = section.getBoundingClientRect();
+        const sectionMiddle = rect.top + rect.height / 2;
+        const distance = Math.abs(sectionMiddle - viewportHeight / 2);
+  
+        if (distance < minDistance) {
+          minDistance = distance;
+          closestIndex = index;
         }
       });
+  
+      setActiveIndex(closestIndex);
     };
-
-    container.addEventListener('scroll', handleScroll);
-    return () => container.removeEventListener('scroll', handleScroll);
+  
+    window.addEventListener('scroll', handleScroll);
+  
+    handleScroll();
+  
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
+  
 
-  // Handle click on navigation items
   const handleNavClick = (index) => {
+    isScrollingRef.current = true;
     setActiveIndex(index);
+    
     contentRefs.current[index].scrollIntoView({
       behavior: 'smooth',
       block: 'start'
     });
+
+    setTimeout(() => {
+      isScrollingRef.current = false;
+    }, 1000);
   };
 
   return (
@@ -52,7 +72,7 @@ const ScrollSpySection = () => {
               <div 
                 key={index}
                 onClick={() => handleNavClick(index)}
-                className={`w-full rounded-2xl p-7 flex flex-col gap-4 border border-white/30 transition-colors ${
+                className={`w-full rounded-2xl p-7 flex flex-col gap-4 border border-white/30 transition-colors cursor-pointer ${
                   activeIndex === index 
                     ? 'bg-[#510ADD]' 
                     : 'bg-transparent hover:bg-white/10'
@@ -78,7 +98,7 @@ const ScrollSpySection = () => {
             <div 
               key={index}
               ref={(el) => (contentRefs.current[index] = el)}
-              className="w-full p-12 bg-[#510ADD] space-y-2 rounded-2xl scroll-mt-4" // scroll-mt-4 for offset
+              className="w-full p-12 bg-[#510ADD] space-y-2 rounded-2xl scroll-mt-4"
             >
               <div className="w-full flex justify-between items-center py-4 border-b border-white">
                 <h1 className="text-white text-3xl">

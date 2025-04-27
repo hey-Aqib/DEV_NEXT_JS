@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Menu, X, ChevronDown } from "lucide-react";
@@ -39,7 +39,7 @@ export default function MobMenu({ Menus }) {
             const isClicked = clicked === i;
             const hasSubMenu = subMenu?.length;
             return (
-              <li key={name} className="">
+              <li key={i} className="">
                 <span
                   className="flex  p-4 hover:bg-white/5 rounded-md cursor-pointer relative"
                   onClick={() => setClicked(isClicked ? null : i)}
@@ -61,14 +61,11 @@ export default function MobMenu({ Menus }) {
                     {subMenu.map(({ name, icon, link }) => {
                       const IconComponent = icon;
                       return (
-                        <Link href={link}>
-                        <li
-                          key={name}
-                          className="p-2 flex  hover:bg-white/5 rounded-md gap-x-4 cursor-pointer"
-                        >
-                          {IconComponent && <IconComponent size={17} />}
-                          {name}
-                        </li>
+                        <Link href={link} key={name}>
+                          <li className="p-2 flex hover:bg-white/5 rounded-md gap-x-4 cursor-pointer">
+                            {IconComponent && <IconComponent size={17} />}
+                            {name}
+                          </li>
                         </Link>
                       );
                     })}

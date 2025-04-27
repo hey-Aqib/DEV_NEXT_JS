@@ -557,7 +557,7 @@ const Header = () => {
 
           <div className="flex-center gap-x-5">
             <div className="lg:hidden">
-              <MobMenu Menus={Menus} />
+              <MobMenu  Menus={Menus} />
             </div>
           </div>
         </div>

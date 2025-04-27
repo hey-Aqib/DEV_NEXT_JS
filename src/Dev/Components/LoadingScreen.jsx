@@ -45,13 +45,12 @@ export default function LoadingScreen() {
         <div className="fixed inset-0 z-[-1] pointer-events-none">
           <Canvas
             camera={{ position: [0, 0, 10] }}
-            frameloop="demand"
             dpr={[1, 1.5]}
             gl={{ powerPreference: "high-performance", antialias: false }}
           >
             <PerformanceMonitor onDecline={() => {}} />
             <Suspense fallback={null}>
-              <Galaxy count={1000} radius={10} />
+              <Galaxy count={6000} radius={10} />
             </Suspense>
           </Canvas>
         </div>

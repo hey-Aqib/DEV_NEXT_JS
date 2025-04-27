@@ -3,8 +3,10 @@ import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { usePathname } from "next/navigation";
 const Footer = () => {
   const cursorRef = useRef(null);
+  const pathname = usePathname();
 
   useEffect(() => {
     const moveCursor = (e) => {
@@ -25,6 +27,12 @@ const Footer = () => {
 
   useGSAP(() => {
     gsap.registerPlugin(ScrollTrigger);
+
+    // Kill previous animations and ScrollTriggers
+    gsap.killTweensOf("#LeftHand");
+    gsap.killTweensOf("#RightHand");
+    ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+
     const footertl = gsap.timeline({
       scrollTrigger: {
         trigger: "#footer",
@@ -59,7 +67,7 @@ const Footer = () => {
         duration: 1,
         ease: "power2.inOut",
       });
-  });
+  }, { dependencies: [pathname] });
 
   //     Footer Hand Animation   ----------------
   //     [Left Hand] starts off-screen left → slides in → pauses → slides back out left

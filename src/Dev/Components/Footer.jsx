@@ -27,12 +27,6 @@ const Footer = () => {
 
   useGSAP(() => {
     gsap.registerPlugin(ScrollTrigger);
-
-    // Kill previous animations and ScrollTriggers
-    gsap.killTweensOf("#LeftHand");
-    gsap.killTweensOf("#RightHand");
-    ScrollTrigger.getAll().forEach(trigger => trigger.kill());
-
     const footertl = gsap.timeline({
       scrollTrigger: {
         trigger: "#footer",
@@ -67,7 +61,7 @@ const Footer = () => {
         duration: 1,
         ease: "power2.inOut",
       });
-  }, { dependencies: [pathname] });
+  });
 
   //     Footer Hand Animation   ----------------
   //     [Left Hand] starts off-screen left → slides in → pauses → slides back out left

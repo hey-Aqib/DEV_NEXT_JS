@@ -26,7 +26,7 @@ const page = () => {
 
       gsap.from(mainHeading.current, {
         y: 50,
-        opacity: 0,
+        opacity: 1,
         duration: 1,
         ease: "power2.inOut",
         scrollTrigger: {

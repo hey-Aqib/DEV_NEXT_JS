@@ -28,7 +28,7 @@ const page = () => {
 
       gsap.from(mainHeading.current, {
         y: 50,
-        opacity: 0,
+        opacity: 1,
         duration: 1,
         ease: "power2.inOut",
         scrollTrigger: {
@@ -59,7 +59,7 @@ const page = () => {
     // Add animations to timeline
     tl.from(headingRef.current, {
       y: 50,
-      opacity: 0,
+      opacity: 1,
       duration: 0.8,
       ease: "power3.out",
     })
@@ -67,7 +67,7 @@ const page = () => {
         textRef.current,
         {
           y: 30,
-          opacity: 0,
+          opacity: 1,
           duration: 0.8,
           ease: "power3.out",
         },
@@ -77,7 +77,7 @@ const page = () => {
         ctaRef.current,
         {
           y: 20,
-          opacity: 0,
+          opacity: 1,
           duration: 0.8,
           ease: "power3.out",
         },

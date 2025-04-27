@@ -27,7 +27,7 @@ const page = () => {
 
       gsap.from(mainHeading.current, {
         y: 50,
-        opacity: 0,
+        opacity: 1,
         duration: 1,
         ease: "power2.inOut",
         scrollTrigger: {
@@ -225,7 +225,7 @@ const page = () => {
             <span className="size-200 absolute -top-50 -left-50  rounded-full bg-[radial-gradient(circle_at_center,#a8288f_20%,transparent_70%)] blur-[90px]"></span>
             <h1
               ref={mainHeading}
-              className="text-white text-center text-8xl max-sm:text-4xl font-bold z-10"
+              className="relative text-white text-center text-8xl max-sm:text-4xl font-bold z-30"
             >
               Search Engine Optimization
             </h1>

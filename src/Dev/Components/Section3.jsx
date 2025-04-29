@@ -16,19 +16,19 @@ const Section3 = () => {
         "At Corecentrix Business Solutions, we provide comprehensive services designed to drive growth, enhance visibility, and increase ROI for businesses across various industries. Our holistic approach integrates cutting-edge marketing strategies with advanced development and IT solutions to ensure your business thrives in today’s competitive landscape.",
       leftCards: [
         {
-          img: "/dev/images/solution logo 1.svg",
+          img: "/dev/images/1.svg",
           title: "Organic Marketing",
           desc: "Harness the Power of Organic Growth Our proven strategies have led to a 150% average increase in search engine rankings and a 120% boost in website traffic for our clients.",
         },
         {
-          img: "/dev/images/Team Work Logo.svg",
+          img: "/dev/images/2.svg",
           title: "Paid Marketing",
           desc: "With our data-driven approach, clients have experienced up to a 300% return on ad spend and a 70% increase in lead generation within the first three months.",
         },
       ],
       middleLine: "/dev/images/large_line.svg",
       rightCard: {
-        img: "/dev/images/Team Work Logo 2.svg",
+        img: "/dev/images/3.svg",
         title: "Development Solutions",
         desc: "Build Robust Digital Experiences We design and develop websites tailored to your brand, ensuring a seamless user experience that enhances engagement and drives conversions.",
       },
@@ -43,19 +43,19 @@ const Section3 = () => {
         "At CBS, we are dedicated to delivering a full spectrum of services that push your business forward. Our core services",
       leftCards: [
         {
-          img: "/dev/images/Team Work Logo 3.svg",
+          img: "/dev/images/4.svg",
           title: "IT & Software Solutions",
           desc: "We provide secure, scalable, and reliable solutions that improve efficiency and productivity. Clients have reported a 30% reduction in operational costs and a 50% increase in system uptime after implementing our solutions",
         },
         {
-          img: "/dev/images/solutions logo 6.svg",
+          img: "/dev/images/5.svg",
           title: "Ineffective Marketing Strategies",
           desc: "Businesses often see poor returns from marketing that doesn’t reach the right audience. Our Paid Marketing Solutions focus on data-driven strategies, optimizing ad spend to deliver up to a 300% ROI, ensuring your investment generates significant returns.",
         },
       ],
       middleLine: "/dev/images/large_line.svg",
       rightCard: {
-        img: "/dev/images/for_small.svg",
+        img: "/dev/images/6.svg",
         title: "Weak Digital Presence",
         desc: "A lack of visibility online can lead to missed opportunities and lower profits. Our Organic Marketing Solutions enhance your digital footprint, improving search rankings by up to 150% and driving high-quality traffic to your site, resulting in higher engagement and sales.",
       },
@@ -96,7 +96,7 @@ const Section3 = () => {
                 {section.leftCards.map((card, index) => (
                   <div key={index} className="max-sm:text-center mb-15 max-sm:mb-10">
                     <img
-                      className="solutions w-[50%] max-sm:w-[40%]
+                      className="solutions w-[60%] max-sm:w-[40%]
                        max-sm:ml-[30%] relative z-20"
                       src={card.img}
                       alt=""
@@ -118,7 +118,7 @@ const Section3 = () => {
               <div className="p-4 mt-20 w-full md:w-[60%] max-sm:mt-10 max-sm:w-[90%] max-sm:p-0 max-sm:text-center">
                 <div>
                   <img
-                    className="solutions w-[50%] max-sm:w-[40%] max-sm:ml-[30%] relative z-20"
+                    className="solutions w-[60%] max-sm:w-[40%] max-sm:ml-[30%] relative z-20"
                     src={section.rightCard.img}
                     alt=""
                   />

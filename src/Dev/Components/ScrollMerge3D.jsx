@@ -160,7 +160,7 @@ const Scene = ({ progress, leftModelRef, rightModelRef }) => {
       />
 
       {showParticles && (
-        <Suspense fallback={null}>
+        <Suspense fallback={null} className="z-[-1]">
           <Galaxy count={10000} radius={10} />
         </Suspense>
       )}
@@ -241,18 +241,18 @@ const ScrollMerge3D = () => {
             </p>
           </h1>
         ) : (
-          <section className="flex items-center justify-center w-full relative z-20">
+          <section className="flex items-center justify-center w-full relative z-200 cursor-pointer">
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-sm:grid-cols-2 max-sm:gap-4 w-[80%]">
               {data.map((item, index) => (
                 <div
                   key={index}
-                  className="relative flex flex-col items-center justify-center text-center p-4 transition-transform duration-500 ease-in-out transform hover:scale-105 z-20"
+                  className="relative flex flex-col items-center justify-center text-center p-4 transition-transform duration-500 ease-in-out transform hover:scale-105 z-200"
                 >
                   <div className="mb-4">
                     <img src={item.icon} alt={item.title} className="w-50 h-26 m-0" />
                   </div>
                   <div className="text-2xl font-bold mb-2 text-white">{item.title}</div>
-                  <div className="absolute top-0 left-0 w-full h-full pointer-events-none z-20">
+                  <div className="absolute top-0 left-0 w-full h-full pointer-events-none z-200">
                     <img src="https://cdn.prod.website-files.com/66507fe061d349897ed2696e/667aca61d042ae963615ccce_Vector%2051.svg" alt="Arrow 1" className="absolute top-0 left-0 w-4 h-4 animate-pulse" />
                     <img src="https://cdn.prod.website-files.com/66507fe061d349897ed2696e/667aca6107b7a31ee16d000d_Vector%2054.svg" alt="Arrow 2" className="absolute top-0 right-0 w-4 h-4 animate-pulse" />
                     <img src="https://cdn.prod.website-files.com/66507fe061d349897ed2696e/667acb7520e9415502cb2e7c_Vector%2058.svg" alt="Arrow 3" className="absolute bottom-0 left-0 w-4 h-4 animate-pulse" />
